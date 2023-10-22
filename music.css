@@ -90,10 +90,6 @@ button {
     background-color: #f0f0f0;
     padding: 30px;
     cursor: pointer;
-    -webkit-transition: opacity 1s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
-    -ms-transition: opacity 1s ease-in-out;
-    -o-transition: opacity 1s ease-in-out;
 }
 
 img.cardimg1 {

@@ -60,6 +60,7 @@ img.cardimg {
     outline: none;
 	-webkit-tap-highlight-color: transparent;
 	-webkit-user-select: none;
+    transition: all 0.5 ease;
 }
 
 @media screen and (min-width: 480px) {
@@ -91,10 +92,7 @@ button {
     background-color: #f0f0f0;
     padding: 30px;
     cursor: pointer;
-    -webkit-transition: opacity 1s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
-    -ms-transition: opacity 1s ease-in-out;
-    -o-transition: opacity 1s ease-in-out;
+    transition: all 0.5 ease;
 }
 
 img.cardimg1 {

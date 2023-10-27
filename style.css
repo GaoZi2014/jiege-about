@@ -16,8 +16,8 @@ body {
     width: 90%;
     border-radius: 20px;
     box-shadow: 4px 4px 4px #0000005c;
-    height: 115vh;
-    min-height: 1150px;
+    height: 90vh;
+    min-height: 900px;
     font-family: 'Poppins';
     font-weight: 300;
 }

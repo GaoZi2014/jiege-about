@@ -14,7 +14,7 @@ body {
     border-radius: 20px;
     box-shadow: 4px 4px 4px #0000005c;
     height: 95vh;
-    min-height: 90vh;
+    min-height: 800px;
     font-family: Arial, Helvetica, sans-serif;
 }
 

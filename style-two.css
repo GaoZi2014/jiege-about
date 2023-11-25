@@ -17,8 +17,8 @@ body {
     width: 90%;
     border-radius: 20px;
     box-shadow: 4px 4px 4px #0000005c;
-    height: 90vh;
-    min-height: 950px;
+    height: 95vh;
+    min-height: 95vh;
     font-family: 'Poppins';
     font-weight: 300;
 }
@@ -110,4 +110,23 @@ img.cardimg1 {
 .name {
     font-family: 'Monomaniac One', sans-serif;
     font-size: 40px;
+}
+
+.text-one {
+    color: rgb(92, 92, 92);
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 25px;
+}
+
+.text-two {
+    color: rgb(92, 92, 92);
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 18px;
+    width: 80%;
+}
+
+hr {
+    height: 3px;
+    background-color: #000000;
+    border: none;
 }

@@ -18,7 +18,7 @@ body {
     border-radius: 20px;
     box-shadow: 4px 4px 4px #0000005c;
     height: 95vh;
-    min-height: 95vh;
+    min-height: 900px;
     font-family: 'Poppins';
     font-weight: 300;
 }
@@ -110,6 +110,23 @@ img.cardimg1 {
 .name {
     font-family: 'Monomaniac One', sans-serif;
     font-size: 40px;
+    animation-name: changecolor;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+}
+
+/* Keyframes */
+
+@keyframes changecolor {
+    0%{color: #fe0000;}
+    5%{color: #ff9c00}
+    15%{color: #f5ff00}
+    40%{color: #3cf10e}
+    65%{color: #01ffe5}
+    80%{color: #0024ff}
+    90%{color: #c500ff}
+    95%{color: #ff009c}
+    100%{color: #fe0000}
 }
 
 .text-one {

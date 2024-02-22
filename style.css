@@ -374,3 +374,7 @@ a {
   margin-left: 20px;
   text-align: center;
 }
+
+a, button, select{
+  -webkit-tap-highlight-color: transparent;
+}

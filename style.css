@@ -73,16 +73,12 @@ nav li:first-child{
 .showOnMobile {
   display: none;
 }
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 800px) {
-  .showOnMobile {
-      display: block;
-  }
-}
 @media(max-width: 800px){
   .hideOnMobile{
     display: none;
+  }
+  .showOnMobile{
+    display: block;
   }
   .menu-button{
     display: block;

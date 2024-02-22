@@ -3,7 +3,7 @@
 </p>
 <h1 align="center">Jiege's Profile By JIEGE</h1>
 
-<p align="center">You can see this website at <a href="https://jiege-about.netlify.app"><img src="https://img.shields.io/badge/Jiege's%20Profile-Click%20To%20See%20Our%20Website-brightgreen%22"></a></p>
+[Go To This Website](https://jiege-about.netlify.app)
 <p align="center"><img src="/screenshot/readme-image.png"></p>
 
 > ## Lastest Notice

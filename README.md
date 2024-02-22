@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="128" align="center" src="/favicon">
+  <img width="128" align="center" src="/favicon/android-chrome-512x512.png">
 </p>
 <h1 align="center">Melaka Homestay Web By JIEGE</h1>
 

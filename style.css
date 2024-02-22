@@ -233,8 +233,13 @@ p {
 
 .profile-about-size {
   width: 50%;
-  border: 3px solid gray;
+  border: 5px solid gray;
   border-radius: 100000px;
+  transition: all 0.5s;
+}
+
+.profile-about-size:hover {
+  border: 5px solid #000;
 }
 
 .about-content {
@@ -280,13 +285,18 @@ p {
 
 .profile_media-size {
   width: 10%;
-  border: 3px solid gray;
+  border: 5px solid gray;
+  transition: all 0.5s;
   border-radius: 100000px;
+}
+
+.profile_media-size:hover{
+  border: 5px solid #000;
 }
 
 .profile_media-size-mobile {
   width: 110px;
-  border: 3px solid gray;
+  border: 5px solid gray;
   border-radius: 100000px;
 }
 

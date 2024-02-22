@@ -17,6 +17,7 @@ body{
 nav{
   backdrop-filter: blur(90px);
   background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 3px 3px 5px #6b6b6b81;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -128,10 +129,11 @@ nav li:first-child{
   height: 110px;
   border: 5px solid gray;
   border-radius: 100px;
+  transition: all 0.5s;
 }
 
 .profile:hover {
-  cursor: none;
+  border: 5px solid #000;
 }
 
 @keyframes changecolor {
@@ -174,6 +176,12 @@ hr {
   border-radius: 100px;
   margin-top: 60px;
   margin-bottom: 60px;
+  transition: all 0.5s;
+}
+
+hr:hover {
+  border: 1px solid rgb(68, 68, 68);
+  background-color: rgb(68, 68, 68);
 }
 
 p {
@@ -195,7 +203,7 @@ p {
 
 .project:hover {
   cursor: none;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .project-2 {
@@ -208,7 +216,7 @@ p {
 
 .project-2:hover {
   cursor: none;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .twitterhash-2{
@@ -243,7 +251,8 @@ p {
 }
 
 .current-page {
-  background-color: #0000000e;
+  background-color: #00000004;
+  border-bottom: 5px solid #000;
 }
 
 .flex-about_content {
@@ -337,4 +346,21 @@ a {
   text-align: center;
   margin: 0px;
   margin-bottom: 0;
+}
+
+.profile-content-mobile {
+  width: 90%;
+  text-align: center;
+  height: 80vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  border-radius: 30px;
+  background-color: #ffffffc8;
+  backdrop-filter: blur(50px);
+  min-height: 850px;
+}
+
+.profile-content-mobile h1,h2,h3,h4,h5,h6,p {
+  margin-left: 20px;
+  text-align: center;
 }

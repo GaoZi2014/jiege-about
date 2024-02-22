@@ -75,7 +75,7 @@ nav li:first-child{
 }
 @media only screen 
 and (min-device-width : 320px) 
-and (max-device-width : 800px) {
+and (max-device-width : 480px) {
   .showOnMobile {
       display: block;
   }
@@ -83,9 +83,6 @@ and (max-device-width : 800px) {
 @media(max-width: 800px){
   .hideOnMobile{
     display: none;
-  }
-  .showOnMobile{
-    display: block;
   }
   .menu-button{
     display: block;

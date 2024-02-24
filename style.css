@@ -10,7 +10,7 @@
 body{
   min-height: 100vh;
   backdrop-filter: blur(40px);
-  background-image: url(/content/hero.jpg);
+  background-image: url(/content/hero_light.jpg);
   font-family: 'Poppins';
   background-color: #f5f5f5;
 }
@@ -39,6 +39,7 @@ nav a{
   display: flex;
   align-items: center;
   color: #000;
+  transition: all 0.5s;
 }
 nav a:hover{
   background-color: #0000000e;
@@ -257,7 +258,8 @@ p {
 
 .current-page {
   background-color: #00000004;
-  border-bottom: 5px solid #000;
+  border-bottom: 2px solid #000;
+  border-top: 2px solid #000;
 }
 
 .flex-about_content {
@@ -298,6 +300,11 @@ p {
   width: 110px;
   border: 5px solid gray;
   border-radius: 100000px;
+  transition: all 0.5s;
+}
+
+.profile_media-size-mobile:hover {
+  border: 5px solid #000;
 }
 
 .social_media-link {
@@ -382,4 +389,165 @@ a {
 
 a, button, select{
   -webkit-tap-highlight-color: transparent;
+}
+
+/* Dark Mode */
+
+@media (prefers-color-scheme: dark) {
+  .profile-content {
+    width: 90%;
+    text-align: center;
+    height: 80vh;
+    margin-top: 5vh;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 5vh;
+    border-radius: 30px;
+    background-color: #222222c8;
+    backdrop-filter: blur(50px);
+    min-height: 850px;
+  }
+
+  .profile-content-mobile {
+    width: 90%;
+    text-align: center;
+    height: 80vh;
+    margin-top: 5vh;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 5vh;
+    border-radius: 30px;
+    background-color: #222222c8;
+    backdrop-filter: blur(50px);
+    min-height: 850px;
+  }
+
+  .profile-content-mobile h1,h2,h3,h4,h5,h6,p {
+    margin-left: 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  .profile-content h1,h2,h3,h4,h5,h6,p {
+    margin-left: 20px;
+    text-align: center;
+    color: white;
+  }
+
+  hr {
+    background-color: #fff;
+    border-color: 1px solid #fff;
+  }
+
+  hr:hover {
+    background-color: #f5f5f5;
+    border: 1px solid #f5f5f5;
+  }
+
+  .profile:hover {
+    border: 5px solid #f5f5f5;
+  }
+
+  nav{
+    backdrop-filter: blur(90px);
+    background-color: rgba(56, 56, 56, 0.9);
+  }
+
+  nav a {
+    color: #fff;
+  }
+
+  nav a:hover {
+    background-color: #ffffff1a;
+  }
+
+  .current-page {
+    border-bottom: 2px solid #fff;
+    border-top: 2px solid #fff;
+    background-color: #ffffff33;
+  }
+
+  .page {
+    color: #fff;
+  }
+
+  body {
+    background-image: url("content/hero_dark.jpg");
+  }
+
+  .menu-button {
+    background-color: #fff;
+  }
+
+  .sidebar{
+    background-color: rgba(0, 0, 0, 0.932);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(50px);
+  }
+
+  .about-content {
+    background-color: #00000085;
+    transition: all 0.5s;
+  }
+
+  .about-content:hover {
+    background-color: #ffffff2f;
+  }
+
+  .profile-about-size:hover {
+    border: 5px solid #fff;
+  }
+
+  .about-content-border-right {
+    border-right: 5px solid #fff;
+  }
+
+  .about-text {
+    color: white;
+  }
+
+  .about-content-mobile {
+    background-color: #00000085;
+  }
+
+
+  
+  .profile_media-size,
+  .profile_media-size-mobile:hover {
+    border: 5px solid #fff;
+  }
+
+  .profile_media-size-mobile:hover {
+    border: 5px solid #fff;
+  }
+
+  .social_media-content {
+    background-color: #00000085;
+  }
+
+  .social_media-link {
+    background-color: #000000cc;
+    color: #fff;
+    border: 3px solid rgba(35, 156, 237, 0.589);
+  }
+
+  .social_media-link:hover {
+    background-color: #ffffff38;
+    border: 3px solid rgb(35, 157, 237);
+  }
+
+  .social_media-link-mobile {
+    background-color: #000000cc;
+    color: #fff;
+    border: 3px solid rgba(35, 156, 237, 0.589);
+  }
+
+  .social_media-link-mobile:hover {
+    background-color: #ffffff38;
+    border: 3px solid rgb(35, 157, 237);
+  }
+
+  .menu-button:hover {
+    background-color: #fff;
+  }
 }

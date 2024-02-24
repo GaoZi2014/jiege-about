@@ -356,6 +356,11 @@ a {
   text-align: center;
   margin: 0px;
   margin-bottom: 0;
+  transition: all 0.5s;
+}
+
+#copyright:hover {
+  background-color: #555555;
 }
 
 .profile-content-mobile {

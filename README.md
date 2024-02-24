@@ -5,6 +5,6 @@
 <p align="center"><img src="/screenshot/readme-image.png"></p>
 
 > ## Lastest Notice
-Big UI Refresh!
+Big UI Refresh and Added Auto Dark Mode!
 [Go To This Website](https://jiege-about.netlify.app)
 

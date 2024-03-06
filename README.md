@@ -3,7 +3,7 @@
 </p>
 <h1 align="center">Jiege's Profile By JIEGE</h1>
 <div align="center">
-  <div style="display: flex; align: flex-start;">
+  <div style="display: flex; align-items: flex-start;">
     <img src="/screenshot/readme-image.png">
     <img src="/content/hero_dark.jpg">
   </div>

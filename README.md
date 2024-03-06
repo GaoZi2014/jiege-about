@@ -4,7 +4,7 @@
 <h1 align="center">Jiege's Profile By JIEGE</h1>
 <div align="center">
   <div style="display: flex;">
-    <img src="/screenshot/readme_image.png/"
+    <img src="/screenshot/readme-image.png"
   </div>
 </div>
 

@@ -233,7 +233,7 @@ p {
 }
 
 .profile-about-size {
-  width: 50%;
+  width: 200px;
   border: 5px solid gray;
   border-radius: 100000px;
   transition: all 0.5s;
@@ -286,7 +286,7 @@ p {
 }
 
 .profile_media-size {
-  width: 10%;
+  width: 150px;
   border: 5px solid gray;
   transition: all 0.5s;
   border-radius: 100000px;

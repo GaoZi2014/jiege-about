@@ -3,9 +3,9 @@
 </p>
 <h1 align="center">Jiege's Profile By JIEGE</h1>
 <div align="center">
-  <div style="display: flex; align-items: flex-start;">
-    <img src="/screenshot/readme-image.png">
-    <img src="/content/hero_dark.jpg">
+  <div style="display: flex;">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=compact&show_icons=true&title_color=ffffff&icon_color=34abeb&text_color=daf7dc&bg_color=151515" style="vertical-align: top;" />
+    <img src="https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true&title_color=ffffff&icon_color=34abeb&text_color=daf7dc&bg_color=151515" />
   </div>
 </div>
 

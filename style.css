@@ -602,4 +602,12 @@ a, button, select{
   .menu-button:hover {
     background-color: #fff;
   }
+  
+  .readme-content {
+    border: 1px solid #ffffff;
+  }
+  
+  .twitterhash-3 {
+    color: white;
+  }
 }

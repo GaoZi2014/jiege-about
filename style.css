@@ -443,6 +443,16 @@ a, button, select{
   font-size: 16px;
 }
 
+::-moz-selection {
+  background: #249ded2d;
+  color: #000000;
+}
+
+::selection {
+  background: #249ded2d;
+  color: #000000;
+}
+
 /* Dark Mode */
 
 @media (prefers-color-scheme: dark) {
@@ -610,4 +620,15 @@ a, button, select{
   .twitterhash-3 {
     color: white;
   }
+
+  ::-moz-selection {
+    background: #249ded2d;
+    color: #ffffff;
+  }
+  
+  ::selection {
+    background: #249ded2d;
+    color: #ffffff;
+  }
 }
+

@@ -20,6 +20,6 @@
 </div>
 
 > ## Lastest Notice
-Big UI Refresh and Added Auto Dark Mode!
+Added project tab content and removed hover settings in about tab.
 [Go To This Website](https://jiege-about.netlify.app)
 

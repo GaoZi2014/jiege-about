@@ -458,6 +458,10 @@ a, button, select{
 /* Dark Mode */
 
 @media (prefers-color-scheme: dark) {
+  h1,h2,h3,h4,h5,h6,p {
+    color: white;
+  }
+
   .profile-content {
     background-color: #222222c8;
   }

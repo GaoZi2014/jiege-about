@@ -20,6 +20,6 @@
 </div>
 
 > ## Lastest Notice
-Added new customize cursor
+Deleted new customize cursor
 [Go To This Website](https://jiegeblog.eu.org/)
 

@@ -20,6 +20,6 @@
 </div>
 
 > ## Lastest Notice
-Added project tab content and removed hover settings in about tab.
+Added new customize cursor
 [Go To This Website](https://jiege-about.netlify.app)
 

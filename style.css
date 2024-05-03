@@ -14,10 +14,6 @@ body{
   background-image: url(/content/hero_light.jpg);
   font-family: 'Poppins';
   background-color: #f5f5f5;
-  cursor: url("cursor/cursor-normal.png"), auto;
-}
-a:hover {
-  cursor: url("cursor/cursor-link.png"), auto;
 }
 nav{
   backdrop-filter: blur(90px);
@@ -48,7 +44,6 @@ nav a{
 }
 nav a:hover{
   background-color: #249ded11;
-  cursor: url("cursor/cursor-link.png"), auto;
 }
 nav li:first-child{
   margin-right: auto;
@@ -170,7 +165,7 @@ nav li:first-child{
 
 .twitterhash-3:hover {
   color: rgb(35, 157, 237);
-  cursor: url("cursor/cursor-link.png"), auto;
+  cursor: pointer;
 }
 
 .twitterhash {
@@ -544,18 +539,7 @@ a, button, select{
 
   body {
     background-image: url("content/hero_dark.jpg");
-    cursor: url("cursor/cursor-dark-normal.png"), auto;
-  }
-
-  a:hover {
-    cursor: url("cursor/cursor-dark-link.png"), auto;
-  }
-
-  nav a:hover {
-    cursor: url("cursor/cursor-dark-link.png"), auto;
-  }
-
-  .menu-button {
+  }.menu-button {
     background-color: #fff;
   }
 
@@ -617,7 +601,7 @@ a, button, select{
   .social_media-link:hover {
     background-color: #ffffff38;
     border: 3px solid rgb(35, 157, 237);
-    cursor: url("cursor/cursor-dark-link.png"), auto;
+    cursor: pointer;
   }
 
   .social_media-link-mobile {
@@ -644,7 +628,7 @@ a, button, select{
   }
 
   .twitterhash-3:hover{
-    cursor: url("cursor/cursor-dark-link.png"), auto;
+    cursor: pointer;
   }
   
   ::-moz-selection {

@@ -21,5 +21,5 @@
 
 > ## Lastest Notice
 Added new customize cursor
-[Go To This Website](https://jiege-about.netlify.app)
+[Go To This Website](https://jiegeblog.eu.org/)
 

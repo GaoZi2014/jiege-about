@@ -20,6 +20,6 @@
 </div>
 
 > ## Lastest Notice
-Deleted new customize cursor
+Fixed Bug
 [Go To This Website](https://jiegeblog.eu.org/)
 

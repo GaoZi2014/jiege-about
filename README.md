@@ -12,12 +12,7 @@
   </div>
 </div>
 
-<div align="center">
-  <div style="display: flex;">
-    <img src="/screenshot/readme-image.png" style="vertical-align: top;" />
-    <img src="/screenshot/readme-image-2.png" />
-  </div>
-</div>
+
 
 > ## Lastest Notice
 Deleted new customize cursor

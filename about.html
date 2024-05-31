@@ -1,122 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Jiege</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-  <meta name="description" content="Jiege's Social Media | Click to view full webpage">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <nav>
-    <ul class="sidebar">
-      <li class="menu-button" onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
-      <li><a href="https://jiegeblog.eu.org/">Home</a></li>
-      <li><a class="current-page" href="https://jiegeblog.eu.org/about.html/">About</a></li>
-      <li><a href="https://www.jiege-canaryblog.eu.org/">Blog</a></li>
-      <li><a href="https://jiegeblog.eu.org/project.html/">Project</a></li>
-      <li><a href="https://jiegeblog.eu.org/social_media.html/">Social Media</a></li>
-    </ul>
-    <ul>
-      <li class="page">About</li>
-      <li class="hideOnMobile"><a href="https://jiegeblog.eu.org/">Home</a></li>
-      <li class="hideOnMobile"><a class="current-page"  href="https://jiegeblog.eu.org/about.html/">About</a></li>
-      <li class="hideOnMobile"><a href="https://www.jiege-canaryblog.eu.org/">Blog</a></li>
-      <li class="hideOnMobile"><a href="https://jiegeblog.eu.org/project.html">Project</a></li>
-      <li class="hideOnMobile"><a href="https://jiegeblog.eu.org/social_media.html/">Social Media</a></li>
-      <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
-    </ul>
-  </nav>
-
-  <!-- End -->
-  <div id="all-content">
-    <br>
-    <div class="flex-about_content hideOnMobile">
-      <div class="about-content about-content-border-right hideOnMobile">
-        <br>
-        <img class="profile-about-size" src="content/transparent-profile.jpg" alt="">
-        <h1 class="about-text">About Me</h1>
-        <hr>
-        <p class="description">Hi coders! I am a <a class="twitterhash" href="https://twitter.com/search?q=%23WindowsInsider&amp;src=hashtag_click">#WindowsInsider</a> FAN, who love new feature / Modern UI. And I am Developing HTML Website.</p>
-        <br>
-      </div>
-      <div class="about-content hideOnMobile">
-        <br>
-        <center>
-          <div class="readme-content hideOnMobile">
-            <p class="directory-text"><a class="twitterhash-3" href="https://github.com/GaoZi2014">GaoZi2014</a> / <span onclick="downloadFile()" class="twitterhash-3">README.md</span></p>
-            <h3 class="readme-title">About Me</h3>
-            <p class="text-align-left">I am a person lived in Earth, I likes coding HTML on my computer. HTML is my best language of all, I will post some content in twitter about the Windows 11 Insider Preview. </p>
-            <br>
-            <img class="text-align-left" src="https://github-readme-stats.vercel.app/api/top-langs/?username=GaoZi2014&layout=compact&show_icons=true&title_color=ffffff&icon_color=ffffff&text_color=ffffff&bg_color=dda15e">
-            <h3 class="readme-title">I am using</h3>
-            <div>
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      About Jiege
+    </title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <meta name="description" content="Jiege's Social Media | Click to view full webpage">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  
+  <body>
+    <nav>
+      <ul class="sidebar">
+        <li class="menu-button" onclick=hideSidebar()>
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960"
+            width="26">
+              <path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://jiegeblog.eu.org/">
+            Home
+          </a>
+        </li>
+        <li>
+          <a class="current-page" href="https://jiegeblog.eu.org/about.html/">
+            About
+          </a>
+        </li>
+        <li>
+          <a href="https://www.jiege-canaryblog.eu.org/">
+            Blog
+          </a>
+        </li>
+        <li>
+          <a href="https://jiegeblog.eu.org/project.html/">
+            Project
+          </a>
+        </li>
+        <li>
+          <a href="https://jiegeblog.eu.org/social_media.html/">
+            Social Media
+          </a>
+        </li>
+      </ul>
+      <ul>
+        <li class="page">
+          About
+        </li>
+        <li class="hideOnMobile">
+          <a href="https://jiegeblog.eu.org/">
+            Home
+          </a>
+        </li>
+        <li class="hideOnMobile">
+          <a class="current-page" href="https://jiegeblog.eu.org/about.html/">
+            About
+          </a>
+        </li>
+        <li class="hideOnMobile">
+          <a href="https://www.jiege-canaryblog.eu.org/">
+            Blog
+          </a>
+        </li>
+        <li class="hideOnMobile">
+          <a href="https://jiegeblog.eu.org/project.html">
+            Project
+          </a>
+        </li>
+        <li class="hideOnMobile">
+          <a href="https://jiegeblog.eu.org/social_media.html/">
+            Social Media
+          </a>
+        </li>
+        <li class="menu-button" onclick=showSidebar()>
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960"
+            width="26">
+              <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"
+              />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- End -->
+    <div id="all-content">
+      <br>
+      <div class="flex-about_content hideOnMobile">
+        <div class="about-content about-content-border-right hideOnMobile">
+          <br>
+          <img class="profile-about-size" src="content/transparent-profile.jpg"
+          alt="">
+          <h1 class="about-text">
+            About Me
+          </h1>
+          <hr>
+          <p class="description">
+            Hi coders! I am a
+            <a class="twitterhash" href="https://twitter.com/search?q=%23WindowsInsider&amp;src=hashtag_click">
+              #WindowsInsider
+            </a>
+            FAN, who love new feature / Modern UI. And I am Developing HTML Website.
+          </p>
+          <br>
+        </div>
+        <div class="about-content hideOnMobile">
+          <br>
+          <center>
+            <div class="readme-content hideOnMobile">
+              <p class="directory-text">
+                <a class="twitterhash-3" href="https://github.com/GaoZi2014">
+                  GaoZi2014
+                </a>
+                /
+                <span onclick="downloadFile()" class="twitterhash-3">
+                  README.md
+                </span>
+              </p>
+              <h3 class="readme-title">
+                About Me
+              </h3>
+              <p class="text-align-left">
+                I am a person lived in Earth, I likes coding HTML on my computer. HTML
+                is my best language of all, I will post some content in twitter about the
+                Windows 11 Insider Preview.
+              </p>
+              <br>
+              <img class="text-align-left" src="https://github-readme-stats.vercel.app/api/top-langs/?username=GaoZi2014&layout=compact&show_icons=true&title_color=ffffff&icon_color=ffffff&text_color=ffffff&bg_color=dda15e">
+              <h3 class="readme-title">
+                I am using
+              </h3>
               <div>
-                <img src="content/app.png" style="width: 50%; min-width: 300px; max-width: 1000px;" alt="app">
+                <div>
+                  <img src="content/app.png" style="width: 40%; min-width: 300px; max-width: 500px;"
+                  alt="app">
+                </div>
               </div>
             </div>
-          </div>
-        </center>
-        <br>
-      </div>
-    </div>
-    <br>
-    <div class="hideOnMobile" id="copyright">Copyright &copy; 2024 Jiege Developer</div>
-  </div>
-    
-      
-      <!-- Mobile -->
-
-      <div class="about-content-mobile showOnMobile">
-        <br class="showOnMobile">
-        <img class="profile-about-size" src="content/transparent-profile.jpg" alt="">
-        <h1 class="about-text">About Me</h1>
-        <hr>
-        <p class="description">Hi coders! I am a <a class="twitterhash" href="https://twitter.com/search?q=%23WindowsInsider&amp;src=hashtag_click">#WindowsInsider</a> FAN, who love new feature / Modern UI. And I am Developing HTML Website.</p>
-        <br>
-      </div>
-      <div class="about-content-mobile showOnMobile">
-        <hr class="middle">
-      </div>
-      <div class="about-content-mobile showOnMobile">
-        <br>
-        <center>
-          <div class="readme-content showOnMobile">
-            <p class="directory-text"><a class="twitterhash-3" href="https://github.com/GaoZi2014">GaoZi2014</a> / <span onclick="downloadFile()" class="twitterhash-3">README.md</span></p>
-            <h3 class="readme-title">About Me</h3>
-            <p class="text-align-left">I am a person lived in Earth, I likes coding HTML on my computer. HTML is my best language of all, I will post some content in twitter about the Windows 11 Insider Preview. </p>
-            <br>
-            <img class="text-align-left" src="https://github-readme-stats.vercel.app/api/top-langs/?username=GaoZi2014&layout=compact&show_icons=true&title_color=ffffff&icon_color=ffffff&text_color=ffffff&bg_color=dda15e">
-            <h3 class="readme-title">I am using</h3>
-            <div>
-              <div>
-                <img src="content/app.png" style="width: 50%; min-width: 300px; max-width: 1000px;" alt="app">
-              </div>
-            </div>
-          </div>
-        </center>
-        <br>
+          </center>
+          <br>
+        </div>
       </div>
       <br>
-      <div class="showOnMobile" id="copyright">Copyright &copy; 2024 Jiege Developer</div>
+      <div class="hideOnMobile" id="copyright">
+        Copyright &copy; 2024 Jiege Developer
+      </div>
+    </div>
+    <!-- Mobile -->
+    <div class="about-content-mobile showOnMobile">
+      <br class="showOnMobile">
+      <img class="profile-about-size" src="content/transparent-profile.jpg"
+      alt="">
+      <h1 class="about-text">
+        About Me
+      </h1>
+      <hr>
+      <p class="description">
+        Hi coders! I am a
+        <a class="twitterhash" href="https://twitter.com/search?q=%23WindowsInsider&amp;src=hashtag_click">
+          #WindowsInsider
+        </a>
+        FAN, who love new feature / Modern UI. And I am Developing HTML Website.
+      </p>
+      <br>
+    </div>
+    <div class="about-content-mobile showOnMobile">
+      <hr class="middle">
+    </div>
+    <div class="about-content-mobile showOnMobile">
+      <br>
+      <center>
+        <div class="readme-content showOnMobile">
+          <p class="directory-text">
+            <a class="twitterhash-3" href="https://github.com/GaoZi2014">
+              GaoZi2014
+            </a>
+            /
+            <span onclick="downloadFile()" class="twitterhash-3">
+              README.md
+            </span>
+          </p>
+          <h3 class="readme-title">
+            About Me
+          </h3>
+          <p class="text-align-left">
+            I am a person lived in Earth, I likes coding HTML on my computer. HTML
+            is my best language of all, I will post some content in twitter about the
+            Windows 11 Insider Preview.
+          </p>
+          <br>
+          <img class="text-align-left" src="https://github-readme-stats.vercel.app/api/top-langs/?username=GaoZi2014&layout=compact&show_icons=true&title_color=ffffff&icon_color=ffffff&text_color=ffffff&bg_color=dda15e">
+          <h3 class="readme-title">
+            I am using
+          </h3>
+          <div>
+            <div>
+              <img src="content/app.png" style="width: 40%; min-width: 300px; max-width: 500px;"
+              alt="app">
+            </div>
+          </div>
+        </div>
+      </center>
+      <br>
+    </div>
+    <br>
+    <div class="showOnMobile" id="copyright">
+      Copyright &copy; 2024 Jiege Developer
+    </div>
+    <script src="script.js">
+    </script>
+    <script>
+      if (navigator.userAgent.match(/MSIE (?: [^;]*)?8/)) { // IE8
+        window.location.href = "https://jiegeblog.eu.org/browser_not_support.html";
+      } else if (navigator.userAgent.match(/MSIE (?: [^;]*)?9/)) { // IE9
+        window.location.href = "https://jiegeblog.eu.org/browser_not_support.html";
+      } else if (navigator.userAgent.match(/MSIE (?: [^;]*)?10/)) { // IE10
+        window.location.href = "https://jiegeblog.eu.org/browser_not_support.html";
+      } else if (navigator.userAgent.match(/Trident\/\d.+ rv:11\./)) { // IE11 (using Trident version)
+        window.location.href = "https://jiegeblog.eu.org/browser_not_support.html";
+      }
+    </script>
+  </body>
 
-    
-
-  <script src="script.js"></script>
-  <script>
-    if (navigator.userAgent.match(/MSIE (?: [^;]*)?8/)) {  // IE8
-        window.location.href = "https://jiegeblog.eu.org/browser_not_support.html";
-    } else if (navigator.userAgent.match(/MSIE (?: [^;]*)?9/)) {  // IE9
-        window.location.href = "https://jiegeblog.eu.org/browser_not_support.html";
-    } else if (navigator.userAgent.match(/MSIE (?: [^;]*)?10/)) {  // IE10
-        window.location.href = "https://jiegeblog.eu.org/browser_not_support.html";
-    } else if (navigator.userAgent.match(/Trident\/\d.+ rv:11\./)) {  // IE11 (using Trident version)
-        window.location.href = "https://jiegeblog.eu.org/browser_not_support.html";
-    }
-  </script>
-</body>
 </html>

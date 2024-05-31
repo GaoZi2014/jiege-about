@@ -1,110 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Project</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-  <meta name="description" content="Jiege's Social Media | Click to view full webpage">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <nav>
-    <ul class="sidebar">
-      <li class="menu-button" onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
-      <li><a href="https://jiegeblog.eu.org/">Home</a></li>
-      <li><a href="https://jiegeblog.eu.org/about.html/">About</a></li>
-      <li><a href="https://www.jiege-canaryblog.eu.org/">Blog</a></li>
-      <li class="current-page"><a href="https://jiegeblog.eu.org/project.html/">Project</a></li>
-      <li><a href="https://jiegeblog.eu.org/social_media.html/">Social Media</a></li>
-    </ul>
-    <ul>
-      <li class="page">Project</li>
-      <li class="hideOnMobile"><a href="https://jiegeblog.eu.org/">Home</a></li>
-      <li class="hideOnMobile"><a href="https://jiegeblog.eu.org/about.html/">About</a></li>
-      <li class="hideOnMobile"><a href="https://www.jiege-canaryblog.eu.org/">Blog</a></li>
-      <li class="hideOnMobile"><a class="current-page" href="https://jiegeblog.eu.org/project.html">Project</a></li>
-      <li class="hideOnMobile"><a href="https://jiegeblog.eu.org/social_media.html/">Social Media</a></li>
-      <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
-    </ul>
-  </nav>
-
-  <!-- End -->
-  <div id="all-content">
-    <br>
-    <div class="flex-project_content hideOnMobile">
-      <div class="project-content project-content-border-right hideOnMobile">
-        <div class="project-wrapper">
-          <h1>My Project</h1>
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      My Project
+    </title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <meta name="description" content="Jiege's Social Media | Click to view full webpage">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  
+  <body>
+    <nav>
+      <ul class="sidebar">
+        <li class="menu-button" onclick=hideSidebar()>
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960"
+            width="26">
+              <path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://jiegeblog.eu.org/">
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="https://jiegeblog.eu.org/about.html/">
+            About
+          </a>
+        </li>
+        <li>
+          <a href="https://www.jiege-canaryblog.eu.org/">
+            Blog
+          </a>
+        </li>
+        <li class="current-page">
+          <a href="https://jiegeblog.eu.org/project.html/">
+            Project
+          </a>
+        </li>
+        <li>
+          <a href="https://jiegeblog.eu.org/social_media.html/">
+            Social Media
+          </a>
+        </li>
+      </ul>
+      <ul>
+        <li class="page">
+          Project
+        </li>
+        <li class="hideOnMobile">
+          <a href="https://jiegeblog.eu.org/">
+            Home
+          </a>
+        </li>
+        <li class="hideOnMobile">
+          <a href="https://jiegeblog.eu.org/about.html/">
+            About
+          </a>
+        </li>
+        <li class="hideOnMobile">
+          <a href="https://www.jiege-canaryblog.eu.org/">
+            Blog
+          </a>
+        </li>
+        <li class="hideOnMobile">
+          <a class="current-page" href="https://jiegeblog.eu.org/project.html">
+            Project
+          </a>
+        </li>
+        <li class="hideOnMobile">
+          <a href="https://jiegeblog.eu.org/social_media.html/">
+            Social Media
+          </a>
+        </li>
+        <li class="menu-button" onclick=showSidebar()>
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960"
+            width="26">
+              <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"
+              />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- End -->
+    <div id="all-content">
+      <br>
+      <div class="flex-project_content hideOnMobile">
+        <div class="project-content project-content-border-right hideOnMobile">
+          <div class="project-wrapper">
+            <h1>
+              My Project
+            </h1>
+            <br>
+            <img class="project" src="content/project-1.png" alt="project-img">
+            <h2>
+              <a class="twitterhash" href="https://github.com/GaoZi2014/homestay-beta_updated">
+                Melaka Homestay Web
+              </a>
+            </h2>
+            <br>
+            <img class="project" src="content/project-2.png" alt="project-img">
+            <h2>
+              <a class="twitterhash" href="https://github.com/GaoZi2014/Python-Text_Editor">
+                Python Text Editor
+              </a>
+            </h2>
+            <br>
+          </div>
+        </div>
+        <div class="project-content hideOnMobile">
           <br>
-          <img class="project" src="content/project-1.png" alt="project-img">
-          <h2><a class="twitterhash" href="https://github.com/GaoZi2014/homestay-beta_updated">Melaka Homestay Web</a></h2>
-          <br>
-          <img class="project" src="content/project-2.png" alt="project-img">
-          <h2><a class="twitterhash" href="https://github.com/GaoZi2014/Python-Text_Editor">Python Text Editor</a></h2>
-          <br>
+          <div class="project-wrapper">
+            <img class="project" src="content/project-3.png" alt="project-img">
+            <h2>
+              <a class="twitterhash" href="https://github.com/GaoZi2014/Python-Calculator">
+                Python Calculator
+              </a>
+            </h2>
+            <br>
+            <img class="project" src="content/project-4.png" alt="project-img">
+            <h2>
+              <a class="twitterhash" href="https://github.com/GaoZi2014/Python-Calculator">
+                Usage Monitor
+              </a>
+            </h2>
+          </div>
         </div>
       </div>
-      <div class="project-content hideOnMobile">
+      <br>
+      <div class="hideOnMobile" id="copyright">
+        Copyright &copy; 2024 Jiege Developer
+      </div>
+      <!-- Mobile -->
+      <div class="about-content-mobile showOnMobile">
+        <br class="showOnMobile">
+        <div class="project-wrapper">
+          <br>
+          <img class="project" src="content/project-1.png" alt="project-img">
+          <h2>
+            <a class="twitterhash" href="https://github.com/GaoZi2014/homestay-beta_updated">
+              Melaka Homestay Web
+            </a>
+          </h2>
+          <br>
+          <img class="project" src="content/project-2.png" alt="project-img">
+          <h2>
+            <a class="twitterhash" href="https://github.com/GaoZi2014/Python-Text_Editor">
+              Python Text Editor
+            </a>
+          </h2>
+        </div>
+        <br>
+      </div>
+      <div class="about-content-mobile showOnMobile">
         <br>
         <div class="project-wrapper">
           <img class="project" src="content/project-3.png" alt="project-img">
-          <h2><a class="twitterhash" href="https://github.com/GaoZi2014/Python-Calculator">Python Calculator</a></h2>
+          <h2>
+            <a class="twitterhash" href="https://github.com/GaoZi2014/Python-Calculator">
+              Python Calculator
+            </a>
+          </h2>
           <br>
           <img class="project" src="content/project-4.png" alt="project-img">
-          <h2><a class="twitterhash" href="https://github.com/GaoZi2014/Python-Calculator">Usage Monitor</a></h2>
+          <h2>
+            <a class="twitterhash" href="https://github.com/GaoZi2014/Python-Calculator">
+              Usage Monitor
+            </a>
+          </h2>
         </div>
+        <br>
+      </div>
+      <br>
+      <div class="showOnMobile" id="copyright">
+        Copyright &copy; 2024 Jiege Developer
       </div>
     </div>
-    <br>
-    <div class="hideOnMobile" id="copyright">Copyright &copy; 2024 Jiege Developer</div>
-  
-    
-      
-      <!-- Mobile -->
+    <script src="script.js">
+    </script>
+    <script>
+      if (navigator.userAgent.match(/MSIE (?: [^;]*)?8/)) { // IE8
+        window.location.href = "https://jiegeblog.eu.org/browser_not_support.html";
+      } else if (navigator.userAgent.match(/MSIE (?: [^;]*)?9/)) { // IE9
+        window.location.href = "https://jiegeblog.eu.org/browser_not_support.html";
+      } else if (navigator.userAgent.match(/MSIE (?: [^;]*)?10/)) { // IE10
+        window.location.href = "https://jiegeblog.eu.org/browser_not_support.html";
+      } else if (navigator.userAgent.match(/Trident\/\d.+ rv:11\./)) { // IE11 (using Trident version)
+        window.location.href = "https://jiegeblog.eu.org/browser_not_support.html";
+      }
+    </script>
+  </body>
 
-    <div class="about-content-mobile showOnMobile">
-      <br class="showOnMobile">
-      <div class="project-wrapper">
-        <br>
-        <img class="project" src="content/project-1.png" alt="project-img">
-        <h2><a class="twitterhash" href="https://github.com/GaoZi2014/homestay-beta_updated">Melaka Homestay Web</a></h2>
-        <br>
-        <img class="project" src="content/project-2.png" alt="project-img">
-        <h2><a class="twitterhash" href="https://github.com/GaoZi2014/Python-Text_Editor">Python Text Editor</a></h2>
-      </div>
-      <br>
-    </div>
-    <div class="about-content-mobile showOnMobile">
-      <br>
-      <div class="project-wrapper">
-        <img class="project" src="content/project-3.png" alt="project-img">
-        <h2><a class="twitterhash" href="https://github.com/GaoZi2014/Python-Calculator">Python Calculator</a></h2>
-        <br>
-        <img class="project" src="content/project-4.png" alt="project-img">
-        <h2><a class="twitterhash" href="https://github.com/GaoZi2014/Python-Calculator">Usage Monitor</a></h2>
-      </div>
-      <br>
-    </div>
-    <br>
-    <div class="showOnMobile" id="copyright">Copyright &copy; 2024 Jiege Developer</div>
-  </div>
-    
-
-  <script src="script.js"></script>
-  <script>
-    if (navigator.userAgent.match(/MSIE (?: [^;]*)?8/)) {  // IE8
-        window.location.href = "https://jiegeblog.eu.org/browser_not_support.html";
-    } else if (navigator.userAgent.match(/MSIE (?: [^;]*)?9/)) {  // IE9
-        window.location.href = "https://jiegeblog.eu.org/browser_not_support.html";
-    } else if (navigator.userAgent.match(/MSIE (?: [^;]*)?10/)) {  // IE10
-        window.location.href = "https://jiegeblog.eu.org/browser_not_support.html";
-    } else if (navigator.userAgent.match(/Trident\/\d.+ rv:11\./)) {  // IE11 (using Trident version)
-        window.location.href = "https://jiegeblog.eu.org/browser_not_support.html";
-    }
-  </script>
-</body>
 </html>

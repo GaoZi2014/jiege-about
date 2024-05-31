@@ -1,17 +1,19 @@
-function showSidebar(){
-  const sidebar = document.querySelector('.sidebar')
-  sidebar.style.display = 'flex'
+function showSidebar() {
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'flex'
 }
-function hideSidebar(){
+
+function hideSidebar() {
   const sidebar = document.querySelector('.sidebar')
   sidebar.style.display = 'none'
 }
+
 function downloadFile() {
   const url = 'About_Me.md';
-  const link = document.createElement('a');
+  const Link = document.createElement('a');
   link.href = url;
   link.download = 'README.md';
-  document.body.appendChild(link);
+  document.body.appendChild(Link);
   link.click();
-  document.body.removeChild(link);
+  document.body.removeChild(Link);
 }

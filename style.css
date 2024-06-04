@@ -128,28 +128,29 @@ nav li:first-child {
   transition:all 0.5s;
 }
 .profile:hover {
-  border:5px solid #0075c4;
+  border:5px solid #505050;
 }
 @keyframes changecolor {
   0% {
-  color:#fe0000;
+    color:#fe0000;
+  }
+  40% {
+    color:#3cf10e
+  }
+  80% {
+    color:#0024ff
+  }
+  90% {
+    color:#c500ff
+  }
+  95% {
+    color:#ff009c
+  }
+  100% {
+    color:#fe0000
+  }
 }
-40% {
-  color:#3cf10e
-}
-80% {
-  color:#0024ff
-}
-90% {
-  color:#c500ff
-}
-95% {
-  color:#ff009c
-}
-100% {
-  color:#fe0000
-}
-}.name {
+.name {
   font-size:35px;
   font-family:'Roboto Slab',serif;
   animation-name:changecolor;
@@ -163,7 +164,7 @@ nav li:first-child {
   transition:color 1s;
 }
 .twitterhash-3:hover {
-  color:rgb(35,157,237);
+  color:rgb(26,120,183);
   cursor:pointer;
 }
 .twitterhash {
@@ -193,8 +194,8 @@ hr {
   margin-bottom:0px;
 }
 hr:hover {
-  border:1px solid #0074bd;
-  background-color:#0074bd;
+  border:1px solid #505050;
+  background-color:#505050;
 }
 p {
   font-size:18px;
@@ -242,7 +243,7 @@ p {
   transition:all 0.5s;
 }
 .profile-about-size:hover {
-  border:5px solid #0074bd;
+  border:5px solid #505050;
 }
 .about-content {
   background-color:#ffffffe7;
@@ -302,7 +303,7 @@ p {
   border-radius:100000px;
 }
 .profile_media-size:hover {
-  border:5px solid #0074bd;
+  border:5px solid #505050;
 }
 .profile_media-size-mobile {
   width:110px;
@@ -311,7 +312,7 @@ p {
   transition:all 0.5s;
 }
 .profile_media-size-mobile:hover {
-  border:5px solid #0074bd;
+  border:5px solid #505050;
 }
 .social_media-link {
   padding:40px;
@@ -428,6 +429,10 @@ a,button,select {
 .project-wrapper {
   margin-top:10%;
 }
+.dark_mode-github {
+  display: none;
+}
+
 /* Dark Mode */
 
 @media (prefers-color-scheme:dark) {
@@ -550,5 +555,11 @@ a,button,select {
   ::selection {
     background:#edea242d;
     color:#ffffff;
+  }
+  .dark_mode-github {
+    display: block;
+  }
+  .light_mode-github {
+    display: none;
   }
 }

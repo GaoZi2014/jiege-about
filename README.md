@@ -20,6 +20,8 @@
 </div>
 
 > ## Lastest Notice
-Fixed Bug
+Version 2.1
+Fixed color bug
+Added auto dark mode for GitHub language card.
 [Go To This Website](https://jiegeblog.eu.org/)
 

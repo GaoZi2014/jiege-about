@@ -19,10 +19,12 @@
   </div>
 </div>
 
-> ## Version 2.1
+> ## Version 2.1.1
 Fixed color bug
 <br/>
 Added auto dark mode for GitHub language card.
+<br/>
+[New] Added new favicon
 <br/>
 [Go To This Website](https://jiegeblog.eu.org/)
 

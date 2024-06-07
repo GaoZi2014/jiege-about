@@ -1,6 +1,6 @@
 function showSidebar() {
-    const sidebar = document.querySelector('.sidebar')
-    sidebar.style.display = 'flex'
+  const sidebar = document.querySelector('.sidebar')
+  sidebar.style.display = 'flex'
 }
 
 function hideSidebar() {

@@ -19,10 +19,8 @@
   </div>
 </div>
 
-> ## Version 2.1.1
-Fixed color bug
-<br/>
-Added auto dark mode for GitHub language card.
+> ## Version 2.2.0
+[New] Added new About This Webpage Tab for developers infomation.
 <br/>
 [New] Added new favicon
 <br/>

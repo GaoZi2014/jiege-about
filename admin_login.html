@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="style.css"
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" media="(prefers-color-scheme: light)">
+    <link rel="apple-touch-icon" type="image/png" sizes="180X180" href="/favicon_dark/apple-touch-icon.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_dark/favicon-32x32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_dark/favicon-16x16.png" media="(prefers-color-scheme: dark)">
+    <meta name="description" content="Jiege's Social Media | Click to view full webpage">
+  </head>
+  <body>
+    <div class="pills" id="pills">
+      <div class="loader close-button" id="loader" onclick="close_admin()"></div>
+      <div class="back_button" id="back_button"></div>
+    </div>
+    <div class="admin_content-wrapper hideOnMobile" id="admin">
+      <div class="admin_content hidden" id="admin_content">
+        <br>
+        <br>
+        <img class="profile_media-size-mobile" src="content/transparent-profile.jpg"
+          alt="">
+        <h1>
+          Admin Login
+        </h1>
+        <p class="description">
+          Please enter your admin credentials to access the admin panel.
+        </p>
+        <hr>
+        <form action="https://github.com/GaoZi2014/jiege-about/edit/main/index.html">
+          <label class="input_label" for="useremail">Email: </label>
+          <input class="input_type" type="text" name="useremail" pattern="jiege.enter@gmail.com" title="Please Enter The Correct Email" required>
+          <br>
+          <label class="input_label" for="userpassword">Password: </label>
+          <input class="input_type" type="password" name="userpassword" pattern="jiegedmksif@1" title="Please Enter The Correct Password" required>
+          <br>
+          <input class="login" type="submit" value="Login">
+        </form>
+      </div>
+    </div>
+    <div class="showOnMobile">
+      <h1 class="screen_msg">Your Screen Is too low</h1>
+    </div>
+    <script src="script.js"></script>
+    <script>
+      if (navigator.userAgent.match(/MSIE (?: [^;]*)?8/)) { // IE8
+        window.location.href = "https://jiegeblog.eu.org/browser_not_support.html";
+      } else if (navigator.userAgent.match(/MSIE (?: [^;]*)?9/)) { // IE9
+        window.location.href = "https://jiegeblog.eu.org/browser_not_support.html";
+      } else if (navigator.userAgent.match(/MSIE (?: [^;]*)?10/)) { // IE10
+        window.location.href = "https://jiegeblog.eu.org/browser_not_support.html";
+      } else if (navigator.userAgent.match(/Trident\/\d.+ rv:11\./)) { // IE11 (using Trident version)
+        window.location.href = "https://jiegeblog.eu.org/browser_not_support.html";
+      }
+    </script>
+  </body>
+</html>

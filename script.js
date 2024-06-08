@@ -17,3 +17,24 @@ function downloadFile() {
   link.click();
   document.body.removeChild(Link);
 }
+
+setTimeout(() => {
+  const loader = document.getElementById('loader');
+  const admin = document.getElementById('admin');
+  const admin_content = document.getElementById('admin_content');
+  const pills = document.getElementById('pills');
+  const back = document.getElementById('back_button');
+  loader.style.width = '0px';
+  loader.style.height = '0px';
+  loader.style.borderTop = "8px solid tomato";
+  loader.style.border = "8px solid tomato";
+  admin_content.style.display = "block";
+  pills.style.width = "70px"
+  back.style.border = "8px solid #09ff00";
+  back.style.borderTop = "8px solid #09ff00";
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+    admin.style.backgroundColor = "#ffffffa2";
+  } else {
+    admin.style.backgroundColor = "#3f3f3fa2";
+  }
+}, 2000);

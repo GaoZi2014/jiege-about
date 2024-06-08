@@ -89,6 +89,16 @@ nav li:first-child {
   display: none;
 }
 
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 @media(max-width:800px) {
   .hideOnMobile {
     display: none;
@@ -532,10 +542,105 @@ select {
   text-decoration: underline;
 }
 
+.loader {
+  border: 8px solid #fff;
+  border-top: 8px solid tomato;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 2s linear infinite;
+  transition: all 0.5s;
+  margin: 10px;
+}
+
+.loader:hover {
+  cursor: pointer;
+}
+
+.back_button {
+  border: 0px solid #09ff00;
+  border-top: 0px solid #09ff00;
+  border-radius: 50%;
+  width: 0px;
+  height: 0px;
+  margin: 10px;
+  transition: all 0.5s;
+}
+
+.back_button:hover {
+  cursor: pointer;
+}
+
+.pills {
+  display: flex;
+  background-color: #ffffffc7;
+  backdrop-filter: blur(50px);
+  width: 98%;
+  border-radius: 50px;
+  margin: 10px;
+  transition: all 0.5s;
+}
+
+.admin_content-wrapper {
+  margin-top: 20px;
+  background-color: #ffffff00;
+  backdrop-filter: blur(50px);
+  height: 90vh;
+  min-height: 650px;
+  transition: all 0.5s;
+}
+
+.admin_content {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.input_label {
+  font-size: 18px;
+}
+
+.input_type {
+  margin: 5px;
+  padding: 10px;
+  background-color: #ffffffa1;
+  border: 2px solid #b6b6b6;
+  transition: all 0.5s;
+  outline: none;
+}
+
+.input_type:focus {
+  background-color: #ffffffd2;
+  border: 2px solid #555;
+}
+
+.login {
+  padding: 25px;
+  border: none;
+  font-size: 16px;
+  margin: 5px;
+  border-radius: 10px;
+  width: 20%;
+  max-width: 220px;
+  background-color: #ffffffa2;
+  transition: all 0.8s;
+}
+
+.login:hover {
+  background-color: #ffffffc9;
+  width: 225px;
+  cursor: pointer;
+}
+
+.screen_msg {
+  margin: 10px;
+}
+
 /* Dark Mode */
 
 @media (prefers-color-scheme:dark) {
-
   h1,
   h2,
   h3,
@@ -717,5 +822,13 @@ select {
 
   .light_mode-github {
     display: none;
+  }
+
+  .pills {
+    background-color: #3f3f3fc7;
+  }
+
+  .input_label {
+    color: #fff;
   }
 }

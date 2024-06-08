@@ -20,9 +20,9 @@
 </div>
 
 > ## Version 2.2.0
+Login Page Maintenance Done
+<br>
 [New] Added new About This Webpage Tab for developers infomation.
-<br/>
-[New] Added new favicon
 <br/>
 [Go To This Website](https://jiegeblog.eu.org/)
 

@@ -22,9 +22,5 @@
 > ## Version 2.2.2
 [New] Fixed some of the noscript bug.
 <br/>
-Login Page Maintenance Done
-<br>
-Added new About This Webpage Tab for developers infomation.
-<br/>
 [Go To This Website](https://jiegeblog.eu.org/)
 

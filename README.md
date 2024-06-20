@@ -19,8 +19,10 @@
   </div>
 </div>
 
-> ## Version 2.2.0
-[New] Login Page Maintenance Done
+> ## Version 2.2.1
+[New] Fixed some of the noscript bug.
+<br/>
+Login Page Maintenance Done
 <br>
 Added new About This Webpage Tab for developers infomation.
 <br/>

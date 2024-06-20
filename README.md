@@ -22,5 +22,5 @@
 > ## Version 2.2.2
 [New] Fixed a serious bug that was causing noscript not to work in each html file, and it seems to be working now. This was a pretty issue, so I'm relieved it's fixed. I am having a coffee now.
 <br/>
-[Website Link](https://github.com/GaoZi2014/jiege-about/tree/main#:~:text=Page%20Version%202.2.2-,jiegeblog.eu.org,-Topics)
+[Website Link](https://github.com/GaoZi2014/jiege-about/tree/main#:~:text=now.%0AWebsite%20Link-,About,Jiege%20About%20Page%20Version%202.2.2,-jiegeblog.eu.org)
 

@@ -121,6 +121,11 @@ nav li:first-child {
   .menu-button {
     display: block;
   }
+
+  nav a:hover {
+    transform: scale(1);
+    margin-left: 20px;
+  }
 }
 
 @media(max-width:400px) {

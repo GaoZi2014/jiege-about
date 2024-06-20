@@ -20,7 +20,7 @@
 </div>
 
 > ## Version 2.2.2
-[New] Fixed some of the noscript bug.
+[New] Fixed a serious bug that was causing noscript not to work in each html file, and it seems to be working now. This was a pretty issue, so I'm relieved it's fixed. I am having a coffee now.
 <br/>
 [Go To This Website](https://jiegeblog.eu.org/)
 

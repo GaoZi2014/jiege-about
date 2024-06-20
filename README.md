@@ -19,7 +19,7 @@
   </div>
 </div>
 
-> ## Version 2.2.1
+> ## Version 2.2.2
 [New] Fixed some of the noscript bug.
 <br/>
 Login Page Maintenance Done

@@ -14,8 +14,8 @@
 
 <div align="center">
   <div style="display: flex;">
-    <img src="/screenshot/image_1.png" style="width: 40%;" />
-    <img src="/screenshot/image_2.png" style="width: 40%;" />
+    <img src="/screenshot/screenshot.png" style="width: 40%;" />
+    <img src="/screenshot/screenshot_dark.png" style="width: 40%;" />
   </div>
 </div>
 

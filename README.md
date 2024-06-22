@@ -19,11 +19,11 @@
   </div>
 </div>
 
-> ## Version 3.0.0
-[New] Changed the background color, Changed the animation. I think the new colors and motion will be more appealing. If you haven't checked out my site yet or if it’s been a while, please go and take a look.
+> ## Version 3.0.12
+[New] Added some new detail for transition.
 <br/>
 <br/>
-Fixed a serious bug that was causing noscript not to work in each html file, and it seems to be working now. This was a pretty issue, so I'm relieved it's fixed.
+Changed the background color, Changed the animation. I think the new colors and motion will be more appealing. If you haven't checked out my site yet or if it’s been a while, please go and take a look.
 <br/>
 <hr>
 

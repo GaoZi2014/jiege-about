@@ -19,7 +19,7 @@
   </div>
 </div>
 
-> ## Version 3.0.12
+> ## Version 3.12.0
 [New] Added new 404 redirect.
 <br/>
 <br/>

@@ -20,10 +20,12 @@
 </div>
 
 > ## Version 3.0.12
-[New] Added some new detail for transition and updated the screenshot image.
+[New] Added new 404 redirect.
 <br/>
 <br/>
-Changed the background color, Changed the animation. I think the new colors and motion will be more appealing. If you haven't checked out my site yet or if it’s been a while, please go and take a look.
+Added some new detail for transition and updated the screenshot image.
+<br/>
+<br/>
 <br/>
 <hr>
 

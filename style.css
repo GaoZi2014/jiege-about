@@ -126,6 +126,11 @@ nav li:first-child {
     transform: scale(1);
     margin-left: 20px;
   }
+
+  .current-page:hover {
+    transform: scale(1);
+    margin-left: 0px;
+  }
 }
 
 @media(max-width:400px) {

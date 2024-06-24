@@ -22,3 +22,17 @@ function downloadFile() {
   link.click();
   document.body.removeChild(Link);
 }
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  let navbar = document.querySelector('nav');
+  if (prevScrollpos > currentScrollPos) {
+    navbar.style.top = '0';
+  } else {
+    navbar.style.top = '-50px';
+  }
+  prevScrollpos = currentScrollPos;
+};
+
+

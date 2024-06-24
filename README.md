@@ -20,7 +20,7 @@
 </div>
 
 > ## Version 3.12.0
-[New] Added new 404 redirect.
+[New] Added new 404 redirect and added auto hide navbar.
 <br/>
 <br/>
 Added some new detail for transition and updated the screenshot image.

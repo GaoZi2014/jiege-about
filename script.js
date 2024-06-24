@@ -6,7 +6,7 @@ function showSidebar() {
     function showSidebar2(){
       sidebar.style.right = '0px';
     }
-  , 200)
+  , 100)
 }
 
 function hideSidebar() {
@@ -16,7 +16,7 @@ function hideSidebar() {
     function showSidebar2(){
       sidebar.style.display = 'none';
     }
-  , 200)
+  , 500)
 }
 
 function downloadFile() {

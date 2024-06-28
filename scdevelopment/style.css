@@ -12,18 +12,6 @@ p {
   margin-left: 20px;
 }
 
-#last-text {
-  margin-bottom: 10px;
-  color: rgb(35, 157, 237);
-  transition: all 0.5s;
-  display: none;
-}
-
-#last-text:hover {
-  cursor: pointer;
-  color: rgb(26, 120, 183);
-}
-
 #game-container {
   display: inline-block;
   background-color: #d4a373;

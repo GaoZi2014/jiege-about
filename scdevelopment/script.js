@@ -171,23 +171,28 @@ function checkAnswer() {
 }
 
 function nextLevel() {
-  const text = document.getElementById("text");
-  const text2 = document.getElementById("last-text");
-  const gameDiv = document.getElementById("game-container");
-  text2.style.display = "block";
-  text.innerHTML = "Correct! It's the " + levels[currentLevel].answer;
-  text2.style.display = "block";
-  gameDiv.style.display = "none";
+  alert("Correct! It's the " + levels[currentLevel].answer);
+
+  if (levelValue >= 10) {
+    levelValue = 0;
+  } else {
+    levelValue += 1;
+  }
+
+  document.querySelector("table").className = "";
+  document.querySelector("p").innerHTML = "Levels: " + levelValue;
+
+  currentLevel++;
+  if (currentLevel >= levels.length) {
+    currentLevel = 0;
+  }
+
+  answer = [];
+  generateLevel();
 }
 
 function nextLevel2() {
-  const text = document.getElementById("text");
-  const text2 = document.getElementById("last-text");
-  const gameDiv = document.getElementById("game-container");
-  text2.style.display = "none";
-  text.innerHTML = ""
-  text2.style.display = "none";
-  gameDiv.style.display = "block";
+  
 
   if (levelValue >= 10) {
     levelValue = 0;

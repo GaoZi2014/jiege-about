@@ -174,7 +174,7 @@ function nextLevel() {
   alert("Correct! It's the " + levels[currentLevel].answer);
 
   if (levelValue >= 10) {
-    levelValue = 0;
+    levelValue = 1;
   } else {
     levelValue += 1;
   }

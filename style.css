@@ -12,8 +12,8 @@ body {
   min-height: 100vh;
   backdrop-filter: blur(40px);
   font-family: 'Poppins';
-  background-color: rgb(143,255,222);
-  background: linear-gradient(143deg, rgba(143,255,222,1) 0%, rgba(172,189,255,1) 49%, rgba(245,227,255,1) 83%, rgba(254,165,255,1) 100%);
+  background-color: rgb(143, 255, 222);
+  background: linear-gradient(143deg, rgba(143, 255, 222, 1) 0%, rgba(172, 189, 255, 1) 49%, rgba(245, 227, 255, 1) 83%, rgba(254, 165, 255, 1) 100%);
 }
 
 a,
@@ -96,7 +96,6 @@ nav li:first-child {
   display: none;
   transition: all 0.5s;
   background-color: #00000000;
-
 }
 
 .closeButton:hover {
@@ -105,16 +104,6 @@ nav li:first-child {
 
 .showOnMobile {
   display: none;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 @media(max-width:800px) {
@@ -225,6 +214,11 @@ p {
   100% {
     color: #fe0000
   }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 .name {
@@ -399,7 +393,7 @@ p {
   text-align: center;
   width: 100%;
   height: 92vh;
-  min-height: 800px;
+  min-height: 950px;
 }
 
 .error-content {
@@ -466,7 +460,8 @@ p {
   margin: 20px;
 }
 
-.social_media-link-mobile:hover, .social_media-link:hover {
+.social_media-link-mobile:hover,
+.social_media-link:hover {
   background-color: #fdfdfdcc;
   box-shadow: 10px 10px 10px #0000001c;
   color: rgb(35, 157, 237);
@@ -477,6 +472,28 @@ p {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+#secret-disappear {
+  transition: all 1s;
+}
+
+#loader,
+#loader-mobile {
+  border: 10px solid #e7e7e7;
+  border-top: 10px solid #000000;
+  border-radius: 50%;
+  width: 40px;
+  display: none;
+  margin: 10px;
+  height: 40px;
+  animation: spin 1.5s linear infinite;
+}
+
+.sc-embed-cd {
+  transition: all 0.5s;
+  transform: scale(0);
+  display: none;
 }
 
 a {
@@ -589,105 +606,19 @@ select {
   text-decoration: underline;
 }
 
-.loader {
-  border: 8px solid #fff;
-  border-top: 8px solid tomato;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  animation: spin 2s linear infinite;
-  transition: all 0.5s;
-  margin: 10px;
-}
-
-.loader:hover {
+#secret-onclick:hover {
+  width: 180px;
   cursor: pointer;
 }
 
-.back_button {
-  border: 0px solid #09ff00;
-  border-top: 0px solid #09ff00;
-  border-radius: 50%;
-  width: 0px;
-  height: 0px;
-  margin: 10px;
-  transition: all 0.5s;
-}
-
-.back_button:hover {
+#secret-onclick-mobile:hover {
+  width: 150px;
   cursor: pointer;
-}
-
-.pills {
-  display: flex;
-  background-color: #ffffffc7;
-  backdrop-filter: blur(50px);
-  width: 98%;
-  border-radius: 50px;
-  margin: 10px;
-  transition: all 0.5s;
-}
-
-.admin_content-wrapper {
-  margin-top: 20px;
-  background-color: #ffffff00;
-  backdrop-filter: blur(50px);
-  height: 90vh;
-  min-height: 650px;
-  transition: all 0.5s;
-}
-
-.admin_content {
-  text-align: center;
-}
-
-.hidden {
-  display: none;
-}
-
-.input_label {
-  font-size: 18px;
-}
-
-.input_type {
-  margin: 5px;
-  padding: 10px;
-  background-color: #ffffffa1;
-  border: 2px solid #b6b6b6;
-  transition: all 0.5s;
-  outline: none;
-}
-
-.input_type:focus {
-  background-color: #ffffffd2;
-  border: 2px solid #555;
-}
-
-.login {
-  padding: 25px;
-  border: none;
-  font-size: 16px;
-  margin: 5px;
-  border-radius: 10px;
-  width: 20%;
-  max-width: 220px;
-  background-color: #ffffffa2;
-  transition: all 0.8s;
-}
-
-.login:hover {
-  background-color: #ffffffc9;
-  width: 225px;
-  cursor: pointer;
-}
-
-.screen_msg {
-  margin: 10px;
 }
 
 /* Dark Mode */
-
 @media (prefers-color-scheme:dark) {
+
   h1,
   h2,
   h3,
@@ -759,8 +690,8 @@ select {
   }
 
   body {
-    background-color: rgb(3,0,57);
-    background: linear-gradient(140deg, rgba(3,0,57,1) 2%, rgba(5,1,82,1) 17%, rgba(55,55,204,1) 72%, rgba(104,119,223,1) 78%, rgba(127,167,214,1) 83%);
+    background-color: rgb(3, 0, 57);
+    background: linear-gradient(140deg, rgba(3, 0, 57, 1) 2%, rgba(5, 1, 82, 1) 17%, rgba(55, 55, 204, 1) 72%, rgba(104, 119, 223, 1) 78%, rgba(127, 167, 214, 1) 83%);
   }
 
   .menu-button {

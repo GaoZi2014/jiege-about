@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Monomaniac One", monospace;
+  background-color: #faedcd;
+}
+
+p {
+  font-size: 30px;
+  margin: 0;
+  margin-left: 20px;
+}
+
+#last-text {
+  margin-bottom: 10px;
+  color: rgb(35, 157, 237);
+  transition: all 0.5s;
+  display: none;
+}
+
+#last-text:hover {
+  cursor: pointer;
+  color: rgb(26, 120, 183);
+}
+
+#game-container {
+  display: inline-block;
+  background-color: #d4a373;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  border: 8px solid #f5f7fa;
+  min-width: 550px;
+  box-sizing: border-box;
+  margin: 0px 10px 10px;
+}
+
+#ref {
+  margin: 0;
+  padding-top: 150px;
+  position: relative;
+}
+
+#colsList {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 150px;
+  bottom: 23px;
+  display: flex;
+  align-items: flex-end;
+  height: 150px;
+}
+
+#colsList li {
+  list-style-type: none;
+  font-size: 18px;
+  line-height: 28px;
+  width: 32px;
+  margin: 0 16px;
+  text-align: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  height: 120px;
+  position: relative;
+}
+
+#colsList li:after {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(255, 255, 255, 0);
+  border-top-color: #ffffff;
+  border-width: 15px;
+  margin-left: -15px;
+}
+
+#rowsList {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  width: 128px;
+  text-align: right;
+}
+
+#rowsList li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  list-style-type: none;
+  font-size: 18px;
+  line-height: 29px;
+  padding-top: 3px;
+  padding-right: 5px;
+  margin: 16px 0 32px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  position: relative;
+}
+
+#rowsList li:after {
+  left: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(255, 255, 255, 0);
+  border-left-color: #ffffff;
+  border-width: 15px;
+  margin-top: -15px;
+}
+
+table {
+  border-spacing: 0;
+  padding-left: 150px;
+}
+
+td {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  background-color: #fefae0;
+  cursor: pointer;
+  border: 1px solid #faedcd;
+}
+
+table.corrected td {
+  border: none;
+}
+
+td.active {
+  background-color: #fdf3b5;
+  color: #ffffff;
+}

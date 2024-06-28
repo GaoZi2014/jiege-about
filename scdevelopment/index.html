@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nonogram Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <p>Levels: 1</p>
+      <p id="text"></p>
+      <p id="last-text" onclick="nextLevel2()">Next</p>
+      <div id="game-container">
+        <div id="ref">
+          <ul id="colsList"></ul>
+
+          <ul id="rowsList"></ul>
+        </div>
+
+        <table></table>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

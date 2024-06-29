@@ -224,9 +224,12 @@ p {
 .name {
   font-size: 35px;
   font-family: 'Roboto Slab', serif;
-  animation-name: changecolor;
-  animation-duration: 30s;
-  animation-iteration-count: infinite;
+  color: #cf5a2d;
+  background-image: -webkit-linear-gradient(45deg, #cf5a2d 14%, #d903fe 36%, #1cfe8e 74%);background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+        
 }
 
 .twitterhash-3 {
@@ -447,7 +450,8 @@ p {
 .social_media-link-mobile {
   padding: 40px;
   border-radius: 50px;
-  min-width: 350px;
+  min-width: 300px;
+  width: 90%;
   border: none;
   width: 80%;
   font-size: 19px;
@@ -657,6 +661,14 @@ select {
     color: white;
   }
 
+  .name {
+    color: #dc88cc;
+    background-image: -webkit-linear-gradient(45deg, #dc88cc 16%, #09a8ae 91%); background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+
   hr {
     background-color: #fff;
     border-color: 1px solid #fff;
@@ -690,8 +702,8 @@ select {
   }
 
   body {
-    background-color: rgb(3, 0, 57);
-    background: linear-gradient(140deg, rgba(3, 0, 57, 1) 2%, rgba(5, 1, 82, 1) 17%, rgba(55, 55, 204, 1) 72%, rgba(104, 119, 223, 1) 78%, rgba(127, 167, 214, 1) 83%);
+    background-color: #303030;
+    background: linear-gradient(332deg, rgb(1, 12, 14) 0%, rgb(1, 69, 68) 66%, rgb(2, 58, 59) 100%);
   }
 
   .menu-button {
@@ -713,7 +725,7 @@ select {
   }
 
   .profile-about-size:hover {
-    border: 5px solid #fff;
+    border: 5px solid #f5f5f5;
   }
 
   .project-content-border-right {
@@ -732,9 +744,8 @@ select {
     background-color: #00000085;
   }
 
-  .profile_media-size,
-  .profile_media-size-mobile:hover {
-    border: 5px solid #fff;
+  .profile_media-size:hover {
+    border: 5px solid #f5f5f5;
   }
 
   .profile_media-size-mobile:hover {

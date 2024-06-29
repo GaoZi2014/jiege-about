@@ -19,11 +19,11 @@
   </div>
 </div>
 
-> ## Version 3.12.0
-[New] Added new custom 404 redirect and added auto hide navbar.
+> ## Version 3.14.0
+[New] Added new background-color in dark mode.
 <br/>
 <br/>
-Added some new detail for transition and updated the screenshot image.
+Added new custom 404 redirect and added auto hide navbar.
 <br/>
 <br/>
 <br/>

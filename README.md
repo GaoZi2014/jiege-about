@@ -25,8 +25,6 @@
 <br/>
 Added new custom 404 redirect and added auto hide navbar.
 <br/>
-<br/>
-<br/>
 <hr>
 
 [Website Link](https://jiegeblog.eu.org/)

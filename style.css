@@ -327,6 +327,22 @@ p {
   text-align: center;
 }
 
+.err-emoji {
+  font-size: 70px;
+  font-family: 'Roboto Slab';
+  text-align: center;
+  color: #6c6c6c;
+  animation: changecolor 15s infinite alternate-reverse;
+}
+
+.err-emoji-mobile {
+  font-size: 50px;
+  font-family: 'Roboto Slab';
+  text-align: center;
+  color: #6c6c6c;
+  animation: changecolor 15s infinite alternate-reverse;
+}
+
 .profile-about-size {
   margin-top: 20px;
   width: 200px;
@@ -451,7 +467,6 @@ p {
   padding: 40px;
   border-radius: 50px;
   min-width: 300px;
-  width: 90%;
   border: none;
   width: 80%;
   font-size: 19px;
@@ -819,6 +834,10 @@ select {
   }
 
   .input_label {
+    color: #fff;
+  }
+
+  .err-emoji, .err-emoji-mobile {
     color: #fff;
   }
 }

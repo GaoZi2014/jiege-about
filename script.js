@@ -9,6 +9,9 @@ if (navigator.userAgent.match(/MSIE (?: [^;]*)?8/)) { // IE8
 }
 
 const cursor = document.getElementById("cursor");
+document.oncontextmenu = document.body.oncontextmenu = function() {
+  return false;
+}
 
 document.addEventListener("mousemove", (e) => {
   cursor.style.top = `${e.clientY}px`;
@@ -22,6 +25,8 @@ document.addEventListener("mousedown", () => {
 document.addEventListener("mouseup", () => {
   cursor.style.transform = "scale(1)";
 });
+
+
 
 function showSidebar() {
   const sidebar = document.querySelector('.sidebar');

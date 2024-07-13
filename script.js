@@ -8,6 +8,21 @@ if (navigator.userAgent.match(/MSIE (?: [^;]*)?8/)) { // IE8
   window.location.href = "https://jiegeblog.eu.org/browser_not_support.html";
 }
 
+const cursor = document.getElementById("cursor");
+
+document.addEventListener("mousemove", (e) => {
+  cursor.style.top = `${e.clientY}px`;
+  cursor.style.left = `${e.clientX}px`;
+});
+
+document.addEventListener("mousedown", () => {
+  cursor.style.transform = "scale(0.8)";
+});
+
+document.addEventListener("mouseup", () => {
+  cursor.style.transform = "scale(1)";
+});
+
 function showSidebar() {
   const sidebar = document.querySelector('.sidebar');
   window.scrollTo(0, 0);

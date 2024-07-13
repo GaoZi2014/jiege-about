@@ -20,7 +20,7 @@
 </div>
 
 > ## Version 3.16.0
-[New] Deleted extra code in each HTML file.
+[New] Deleted extra code in each HTML file and added new cursor.
 <br/>
 <br/>
 Added new background-color in dark mode.

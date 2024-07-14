@@ -20,7 +20,7 @@
 </div>
 
 > ## Version 4.0.0
-[New] Disabled right click and fixed some bug.
+[New] Disabled right click, added new color in dark mode and fixed some bug.
 <br/>
 <br/>
 Deleted extra code in each HTML file and added new cursor.

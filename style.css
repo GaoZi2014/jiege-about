@@ -17,6 +17,15 @@ body {
   background: linear-gradient(143deg, rgba(143, 255, 222, 1) 0%, rgba(172, 189, 255, 1) 49%, rgba(245, 227, 255, 1) 83%, rgba(254, 165, 255, 1) 100%);
 }
 
+#no-right-click-message {
+  position: sticky;
+  padding: 10px;
+  text-align: center;
+  z-index: 10000;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
 #cursor {
   margin-top: -25px;
   position: sticky;
@@ -26,9 +35,10 @@ body {
   height: 20px;
   border-radius: 10000px;
   background-color: #00000044;
+  box-shadow: 3px 3px 3px #00000029;
   pointer-events: none;
   z-index: 100000;
-  transition: transform 0.1s ease-out;
+  transition: all 0.09s;
 }
 
 #cursor::before {
@@ -40,7 +50,6 @@ body {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #ffffff00;
 }
 
 a,
@@ -134,6 +143,10 @@ nav li:first-child {
 }
 
 @media(max-width:800px) {
+  * {
+    cursor: default;
+  }
+
   #cursor {
     display: none;
   }
@@ -738,7 +751,7 @@ select {
   }
 
   nav {
-    background-color: rgba(56, 56, 56, 0.9);
+    background-color: rgba(56, 56, 56, 0.85);
   }
 
   nav a {
@@ -757,7 +770,7 @@ select {
 
   body {
     background-color: #303030;
-    background: linear-gradient(332deg, rgb(1, 12, 14) 0%, rgb(1, 69, 68) 66%, rgb(2, 58, 59) 100%);
+    background: linear-gradient(13deg, rgb(48, 24, 59) 0%, rgb(8, 70, 95) 100%);
   }
 
   .menu-button {

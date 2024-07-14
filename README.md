@@ -19,11 +19,11 @@
   </div>
 </div>
 
-> ## Version 3.16.0
-[New] Deleted extra code in each HTML file and added new cursor.
+> ## Version 4.0.0
+[New] Disabled right click and fixed some bug.
 <br/>
 <br/>
-Added new background-color in dark mode.
+Deleted extra code in each HTML file and added new cursor.
 <br/>
 <hr>
 

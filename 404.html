@@ -24,6 +24,8 @@
       margin: 0;
       padding: 0;
       cursor: none;
+      -webkit-user-select: none;
+      -webkit-context-menu: none;
     }
 
     body {
@@ -55,7 +57,7 @@
       box-shadow: 3px 3px 3px #00000029;
       pointer-events: none;
       z-index: 100000;
-      transition: all 0.09s;
+      transition: transform 0.1s ease-out, opacity 0.5s ease-in-out;
     }
 
     #cursor::before {
@@ -1045,6 +1047,168 @@
     <div class="showOnMobile" id="copyright">
       Copyright &copy; 2024 Jiege Developer
     </div>
-    <script src="script.js"></script>
+    <script>
+      if (navigator.userAgent.match(/MSIE (?: [^;]*)?8/)) { // IE8
+        window.location.href = "https://jiegeblog.eu.org/browser_not_support.html";
+      } else if (navigator.userAgent.match(/MSIE (?: [^;]*)?9/)) { // IE9
+        window.location.href = "https://jiegeblog.eu.org/browser_not_support.html";
+      } else if (navigator.userAgent.match(/MSIE (?: [^;]*)?10/)) { // IE10
+        window.location.href = "https://jiegeblog.eu.org/browser_not_support.html";
+      } else if (navigator.userAgent.match(/Trident\/\d.+ rv:11\./)) { // IE11 (using Trident version)
+        window.location.href = "https://jiegeblog.eu.org/browser_not_support.html";
+      }
+
+      document.addEventListener("mouseleave", () => {
+        const cursor = document.getElementById("cursor");
+        cursor.style.opacity = 0;
+      });
+
+      document.addEventListener("mouseenter", () => {
+        const cursor = document.getElementById("cursor");
+        cursor.style.opacity = 1;
+      });
+
+      document.addEventListener("contextmenu", function(event) {
+        event.preventDefault();
+        let message = document.getElementById("no-right-click-message");
+        message.style.opacity = "1";
+        setTimeout(
+          function() {
+            message.style.opacity = "0";
+          }
+        , 3000);
+      });
+
+      const cursor = document.getElementById("cursor")
+      document.addEventListener("mousemove", (e) => {
+        cursor.style.top = `${e.clientY}px`;
+        cursor.style.left = `${e.clientX}px`;
+      });
+
+      document.addEventListener("mousedown", () => {
+        cursor.style.transform = "scale(0.8)";
+      });
+
+      document.addEventListener("mouseup", () => {
+        cursor.style.transform = "scale(1)";
+      });
+
+      function showSidebar() {
+        const sidebar = document.querySelector('.sidebar');
+        window.scrollTo(0, 0);
+        sidebar.style.display = 'flex';
+        setTimeout(
+          function showSidebar2() {
+            sidebar.style.right = '0px';
+          }, 100)
+      }
+
+      function hideSidebar() {
+        const sidebar = document.querySelector('.sidebar');
+        sidebar.style.right = '-500px';
+        setTimeout(
+          function showSidebar2() {
+            sidebar.style.display = 'none';
+          }, 500)
+      }
+
+      function downloadFile() {
+        const url = 'About_Me.md';
+        const Link = document.createElement('a');
+        link.href = url;
+        link.download = 'README.md';
+        document.body.appendChild(Link);
+        link.click();
+        document.body.removeChild(Link);
+      }
+
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        let navbar = document.querySelector('nav');
+        if (prevScrollpos > currentScrollPos) {
+          navbar.style.top = '0';
+          navbar.style.boxShadow = '5px 5px 5px #00000018';
+        } else {
+          navbar.style.top = '-50px';
+          navbar.style.boxShadow = '0px 0px 0px #00000018';
+        }
+        prevScrollpos = currentScrollPos;
+      };
+
+      const image = document.getElementById('secret-onclick');
+      const imageMobile = document.getElementById('secret-onclick-mobile');
+      let clickCount = 0;
+
+      image.addEventListener('click', () => {
+        const loader = document.getElementById('loader');
+        const secretText = document.getElementById('secret-text-change');
+        const secretText2 = document.getElementById('secret-text-change-2');
+        const disappear = document.getElementById('secret-disappear');
+        const embedWindow = document.getElementById('sc-embed-cd');
+        clickCount++;
+          if (clickCount === 2) {
+            secretText.innerHTML = "Bro I told you don't click me twice.";
+            secretText2.innerHTML = 'Hidden Easter Egg!';
+            secretText2.style.animation = 'changecolor';
+            secretText2.style.animationDuration = '15s';
+            image.style.border = '5px solid #505050';
+            secretText2.style.animationIterationCount = 'infinite';
+            disappear.style.transform = 'scale(0)';
+            embedWindow.style.display = 'block';
+            setTimeout(
+              function makebtnconDisappear() {
+                disappear.style.display = 'none';
+                loader.style.display = 'block';
+                embedWindow.style.display = 'block';
+                setTimeout(
+                  function f2sc() {
+                    embedWindow.style.transform = 'scale(1)';
+                    loader.style.display = 'none';
+                  }
+                , 2000)
+              }
+            , 1500)
+            image.style.width = '180px';
+          } else {
+            secretText.innerHTML = "You can click me, BUT DON'T CLICK ME TWICE!";
+          }
+      });
+
+      imageMobile.addEventListener('click', () => {
+        const loader = document.getElementById('loader-mobile');
+        const secretText = document.getElementById('secret-text-change-mobile');
+        const secretText2 = document.getElementById('secret-text-change-2-mobile');
+        const disappear = document.getElementById('secret-disappear-mobile');
+        const embedWindow = document.getElementById('sc-embed-cd-mobile');
+        clickCount++;
+          if (clickCount === 2) {
+            secretText.innerHTML = "Bro I told you don't click me twice.";
+            secretText2.innerHTML = 'Hidden Easter Egg!';
+            secretText2.style.animation = 'changecolor';
+            secretText2.style.animationDuration = '15s';
+            image.style.border = '5px solid #505050';
+            secretText2.style.animationIterationCount = 'infinite';
+            disappear.style.transform = 'scale(0)';
+            embedWindow.style.display = 'block';
+            setTimeout(
+              function makebtnconDisappear() {
+                disappear.style.display = 'none';
+                loader.style.display = 'block';
+                embedWindow.style.display = 'block';
+                setTimeout(
+                  function f2sc() {
+                    embedWindow.style.transform = 'scale(1)';
+                    loader.style.display = 'none';
+                  }
+                , 2000)
+              }
+            , 1500)
+            imageMobile.style.width = '150px';
+          } else {
+            secretText.innerHTML = "You can click me, BUT DON'T CLICK ME TWICE!";
+          }
+      });
+    </script>
   </body>
 </html>

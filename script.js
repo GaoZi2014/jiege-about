@@ -8,6 +8,16 @@ if (navigator.userAgent.match(/MSIE (?: [^;]*)?8/)) { // IE8
   window.location.href = "https://jiegeblog.eu.org/browser_not_support.html";
 }
 
+document.addEventListener("mouseleave", () => {
+  const cursor = document.getElementById("cursor");
+  cursor.style.opacity = 0;
+});
+
+document.addEventListener("mouseenter", () => {
+  const cursor = document.getElementById("cursor");
+  cursor.style.opacity = 1;
+});
+
 document.addEventListener("contextmenu", function(event) {
   event.preventDefault();
   let message = document.getElementById("no-right-click-message");

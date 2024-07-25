@@ -7,6 +7,8 @@
   margin: 0;
   padding: 0;
   cursor: none;
+  -webkit-user-select: none;
+  -webkit-context-menu: none;
 }
 
 body {
@@ -38,7 +40,7 @@ body {
   box-shadow: 3px 3px 3px #00000029;
   pointer-events: none;
   z-index: 100000;
-  transition: all 0.09s;
+  transition: transform 0.1s ease-out, opacity 0.5s ease-in-out;
 }
 
 #cursor::before {

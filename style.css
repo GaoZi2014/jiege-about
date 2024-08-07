@@ -362,7 +362,7 @@ p {
   text-align: center;
   width: 50%;
   height: 85vh;
-  min-height: 600px;
+  min-height: 610px;
 }
 
 .project-content {
@@ -499,6 +499,8 @@ a {
 }
 
 #copyright {
+  position : absolute;
+  bottom : 0;
   background-color: #000;
   color: white;
   width: 100%;

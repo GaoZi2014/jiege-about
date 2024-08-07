@@ -379,7 +379,7 @@
       text-align: center;
       width: 50%;
       height: 85vh;
-      min-height: 600px;
+      min-height: 610px;
     }
 
     .project-content {
@@ -516,6 +516,8 @@
     }
 
     #copyright {
+      position : absolute;
+      bottom : 0;
       background-color: #000;
       color: white;
       width: 100%;
@@ -649,7 +651,74 @@
       height: 92vh;
       min-height: 800px;
     }
-    
+    /* socmd new*/
+
+    .icon {
+      text-decoration: none;
+      width: 5.625rem;
+      height: 5.625rem;
+      border-radius: 14px;
+      /* background-color: hsla(209 20% 70% / 20%); */ /* For dark theme */
+      background-color: #fff;
+      margin: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      position: relative;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+        rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    }
+
+    .icon > i {
+      color: #353535;
+      font-size: 1.5rem;
+      transition: all 0.2s;
+    }
+
+    .icon:hover > i {
+      scale: 1.2;
+      color: #f1f1f1;
+    }
+
+    .icon:before {
+      background: var(--color);
+      content: "";
+      position: absolute;
+      width: 130%;
+      height: 130%;
+      left: -110%;
+      top: 80%;
+      transform: rotate(45deg);
+    }
+
+    .icon:hover:before {
+      animation: slide 0.5s forwards;
+    }
+
+    @keyframes slide {
+      100% {
+        left: -15%;
+        top: -15%;
+      }
+    }
+
+    .icon:has(.fa-instagram) {
+      --color: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
+    }
+
+    .icon:has(.fa-bluesky) {
+      --color: #1da1f2;
+    }
+    .icon:has(.fa-github) {
+      --color: #333;
+    }
+
+    .icon:has(.fa-x-twitter) {
+      --color: #515151;
+    }
+
+
     /* Dark Mode */
     @media (prefers-color-scheme:dark) {
 

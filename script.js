@@ -8,56 +8,21 @@ if (navigator.userAgent.match(/MSIE (?: [^;]*)?8/)) { // IE8
   window.location.href = "https://jiegeblog.eu.org/browser_not_support.html";
 }
 
-document.addEventListener("mouseleave", () => {
-  const cursor = document.getElementById("cursor");
-  cursor.style.opacity = 0;
-});
-
-document.addEventListener("mouseenter", () => {
-  const cursor = document.getElementById("cursor");
-  cursor.style.opacity = 1;
-});
-
-document.addEventListener("contextmenu", function(event) {
-  event.preventDefault();
-  let message = document.getElementById("no-right-click-message");
-  message.style.opacity = "1";
-  setTimeout(
-    function() {
-      message.style.opacity = "0";
-    }
-  , 3000);
-});
-
-const cursor = document.getElementById("cursor")
-document.addEventListener("mousemove", (e) => {
-  cursor.style.top = `${e.clientY}px`;
-  cursor.style.left = `${e.clientX}px`;
-});
-
-document.addEventListener("mousedown", () => {
-  cursor.style.transform = "scale(0.8)";
-});
-
-document.addEventListener("mouseup", () => {
-  cursor.style.transform = "scale(1)";
-});
-
 function showSidebar() {
   const sidebar = document.querySelector('.sidebar');
   window.scrollTo(0, 0);
   sidebar.style.display = 'flex';
   setTimeout(
     function showSidebar2() {
-      sidebar.style.right = '0px';
+      sidebar.style.opacity = '1';
     }, 100)
 }
 
 function hideSidebar() {
   const sidebar = document.querySelector('.sidebar');
-  sidebar.style.right = '-500px';
+  sidebar.style.opacity = '0';
   setTimeout(
-    function showSidebar2() {
+    function hideSidebar2() {
       sidebar.style.display = 'none';
     }, 500)
 }

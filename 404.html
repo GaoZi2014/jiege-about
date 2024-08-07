@@ -23,9 +23,6 @@
     * {
       margin: 0;
       padding: 0;
-      cursor: none;
-      -webkit-user-select: none;
-      -webkit-context-menu: none;
     }
 
     body {
@@ -34,41 +31,6 @@
       font-family: 'Poppins';
       background-color: rgb(143, 255, 222);
       background: linear-gradient(143deg, rgba(143, 255, 222, 1) 0%, rgba(172, 189, 255, 1) 49%, rgba(245, 227, 255, 1) 83%, rgba(254, 165, 255, 1) 100%);
-    }
-
-    #no-right-click-message {
-      position: sticky;
-      padding: 10px;
-      text-align: center;
-      z-index: 10000;
-      opacity: 0;
-      transition: all 0.5s;
-    }
-
-    #cursor {
-      margin-top: -25px;
-      position: sticky;
-      top: 0;
-      left: 0;
-      width: 20px;
-      height: 20px;
-      border-radius: 10000px;
-      background-color: #00000044;
-      box-shadow: 3px 3px 3px #00000029;
-      pointer-events: none;
-      z-index: 100000;
-      transition: transform 0.1s ease-out, opacity 0.5s ease-in-out;
-    }
-
-    #cursor::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
     }
 
     a,
@@ -123,8 +85,6 @@
 
     .sidebar {
       position: fixed;
-      top: 0px;
-      right: -500px;
       height: 100vh;
       width: 250px;
       background-color: rgba(255, 255, 255, 0.932);
@@ -136,7 +96,8 @@
       justify-content: flex-start;
       z-index: 10000;
       backdrop-filter: blur(50px);
-      transition: all 0.5s;
+      transition: opacity 0.3s ease-in-out;
+      opacity: 0;
     }
 
     .sidebar li {
@@ -166,10 +127,6 @@
         cursor: default;
       }
 
-      #cursor {
-        display: none;
-      }
-
       .hideOnMobile {
         display: none;
       }
@@ -191,6 +148,22 @@
         transform: scale(1);
         margin-left: 0px;
         background-color: #00000010;
+      }
+
+      button {
+        padding: 40px;
+        border-radius: 50px;
+        min-width: 300px;
+        border: none;
+        width: 80%;
+        font-size: 19px;
+        font-weight: 400;
+        font-family: 'Poppins';
+        margin-bottom: 30px;
+        background-color: #ffffffcc;
+        box-shadow: 5px 5px 5px #0000001c;
+        transition: all 0.5s;
+        margin: 20px;
       }
     }
 
@@ -304,6 +277,7 @@
 
     .twitterhash-3:hover {
       color: rgb(26, 120, 183);
+      cursor: pointer;
     }
 
     .twitterhash {
@@ -482,7 +456,7 @@
       border: 5px solid #505050;
     }
 
-    .social_media-link {
+    button {
       padding: 40px;
       min-width: 350px;
       border-radius: 50px;
@@ -498,24 +472,7 @@
       margin: 20px;
     }
 
-    .social_media-link-mobile {
-      padding: 40px;
-      border-radius: 50px;
-      min-width: 300px;
-      border: none;
-      width: 80%;
-      font-size: 19px;
-      font-weight: 400;
-      font-family: 'Poppins';
-      margin-bottom: 30px;
-      background-color: #ffffffcc;
-      box-shadow: 5px 5px 5px #0000001c;
-      transition: all 0.5s;
-      margin: 20px;
-    }
-
-    .social_media-link-mobile:hover,
-    .social_media-link:hover {
+    button:hover {
       background-color: #fdfdfdcc;
       box-shadow: 10px 10px 10px #0000001c;
       color: rgb(35, 157, 237);
@@ -692,22 +649,9 @@
       height: 92vh;
       min-height: 800px;
     }
-
+    
     /* Dark Mode */
     @media (prefers-color-scheme:dark) {
-      #cursor {
-        margin-top: -25px;
-        position: sticky;
-        top: 0;
-        left: 0;
-        width: 20px;
-        height: 20px;
-        border-radius: 10000px;
-        background-color: #ffffff44;
-        pointer-events: none;
-        z-index: 100000;
-        transition: transform 0.1s ease-out;
-      }
 
       h1,
       h2,
@@ -717,6 +661,14 @@
       h6,
       p {
         color: white;
+      }
+
+      .icon {
+        background-color: hsla(209 20% 70% / 20%);
+      }
+
+      .icon > i {
+        color: #ffffff;
       }
 
       .profile-content {
@@ -842,22 +794,13 @@
         background-color: #00000085;
       }
 
-      .social_media-link {
+      button {
         background-color: #ffffff1a;
         color: #fff;
         border: none;
       }
 
-      .social_media-link:hover {
-        background-color: #ffffff28;
-      }
-
-      .social_media-link-mobile {
-        background-color: #ffffff1a;
-        color: #fff;
-      }
-
-      .social_media-link-mobile:hover {
+      .button:hover {
         background-color: #ffffff28;
       }
 
@@ -990,9 +933,6 @@
         </li>
       </ul>
     </nav>
-    <nav id="no-right-click-message">
-      <p>Right click is disabled on this website.</p>
-    </nav>
     <!-- End -->
     <div id="all-content">
     <br>
@@ -1041,8 +981,6 @@
         </a>
       </div>
     </div>
-      
-      <br>
     </div>
     <div class="showOnMobile" id="copyright">
       Copyright &copy; 2024 Jiege Developer
@@ -1057,41 +995,6 @@
       } else if (navigator.userAgent.match(/Trident\/\d.+ rv:11\./)) { // IE11 (using Trident version)
         window.location.href = "https://jiegeblog.eu.org/browser_not_support.html";
       }
-
-      document.addEventListener("mouseleave", () => {
-        const cursor = document.getElementById("cursor");
-        cursor.style.opacity = 0;
-      });
-
-      document.addEventListener("mouseenter", () => {
-        const cursor = document.getElementById("cursor");
-        cursor.style.opacity = 1;
-      });
-
-      document.addEventListener("contextmenu", function(event) {
-        event.preventDefault();
-        let message = document.getElementById("no-right-click-message");
-        message.style.opacity = "1";
-        setTimeout(
-          function() {
-            message.style.opacity = "0";
-          }
-        , 3000);
-      });
-
-      const cursor = document.getElementById("cursor")
-      document.addEventListener("mousemove", (e) => {
-        cursor.style.top = `${e.clientY}px`;
-        cursor.style.left = `${e.clientX}px`;
-      });
-
-      document.addEventListener("mousedown", () => {
-        cursor.style.transform = "scale(0.8)";
-      });
-
-      document.addEventListener("mouseup", () => {
-        cursor.style.transform = "scale(1)";
-      });
 
       function showSidebar() {
         const sidebar = document.querySelector('.sidebar');

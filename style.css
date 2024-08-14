@@ -687,7 +687,7 @@ select {
 }
 
 .icon:has(.fa-instagram) {
-  --color: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
+  --color: linear-gradient(-95deg, #f9ce34, #ee2a7b, #6228d7);
 }
 
 .icon:has(.fa-bluesky) {

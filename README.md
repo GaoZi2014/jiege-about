@@ -19,11 +19,8 @@
   </div>
 </div>
 
-> ## Version 4.0.0
-[New] Disabled right click, added new color in dark mode and fixed some bug.
-<br/>
-<br/>
-Deleted extra code in each HTML file and added new cursor.
+> ## Version 4.1.0
+[New] Deleted new cursor added in v4.0.0 cause of some bug.
 <br/>
 <hr>
 

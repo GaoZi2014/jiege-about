@@ -19,8 +19,8 @@
   </div>
 </div>
 
-> ## Version 4.1.0
-[New] Deleted new cursor added in v4.0.0 cause of some bug.
+> ## Version 5.0.0
+[New] Added magic cursor.
 <br/>
 <hr>
 

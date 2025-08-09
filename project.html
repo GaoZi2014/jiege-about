@@ -15,8 +15,39 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon_dark/favicon-16x16.png" media="(prefers-color-scheme: dark)">
     <meta name="description" content="Jiege's Social Media | Click to view full webpage">
     <link rel="stylesheet" href="style.css">
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const cursorInner = document.querySelector('.cursor-inner');
+        const cursorOuter = document.querySelector('.cursor-outer');
+
+        if (cursorInner && cursorOuter) {
+            document.addEventListener('mousemove', e => {
+                cursorInner.style.left = e.clientX + 'px';
+                cursorInner.style.top = e.clientY + 'px';
+                
+                cursorOuter.style.left = e.clientX + 'px';
+                cursorOuter.style.top = e.clientY + 'px';
+            });
+
+            const hoverableElements = document.querySelectorAll('a, button, h1');
+
+            hoverableElements.forEach(item => {
+                item.addEventListener('mouseover', () => {
+                    cursorInner.style.transform = 'scale(2) translate(-25%, -25%)';
+                    cursorOuter.style.transform = 'scale(1.5) translate(-33%, -33%)';
+                });
+                item.addEventListener('mouseout', () => {
+                    cursorInner.style.transform = 'scale(1) translate(-50%, -50%)';
+                    cursorOuter.style.transform = 'scale(1) translate(-50%, -50%)';
+                });
+            });
+        }
+    });
+    </script>
   </head>
   <body>
+    <div class="cursor-inner" id="cursor-inner"></div>
+    <div class="cursor-outer" id="cursor-outer"></div>
     <noscript>
       <meta http-equiv="refresh" content="0; url=browser_not_support_js.html">
     </noscript>

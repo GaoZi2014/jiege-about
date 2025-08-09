@@ -14,7 +14,6 @@ body {
   font-family: 'Poppins';
   background-color: rgb(143, 255, 222);
   background: linear-gradient(143deg, rgba(143, 255, 222, 1) 0%, rgba(172, 189, 255, 1) 49%, rgba(245, 227, 255, 1) 83%, rgba(254, 165, 255, 1) 100%);
-  overflow: hidden;
   cursor: none;
 }
 

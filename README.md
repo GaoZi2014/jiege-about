@@ -19,8 +19,9 @@
   </div>
 </div>
 
-> ## Version 5.0.0
-[New] Added magic cursor.
+> ## Version 5.0.1
+[New] Fixed magic cursor.
+Added magic cursor.
 <br/>
 <hr>
 

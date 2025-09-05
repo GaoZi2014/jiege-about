@@ -14,7 +14,6 @@ body {
   font-family: 'Poppins';
   background-color: rgb(143, 255, 222);
   background: linear-gradient(143deg, rgba(143, 255, 222, 1) 0%, rgba(172, 189, 255, 1) 49%, rgba(245, 227, 255, 1) 83%, rgba(254, 165, 255, 1) 100%);
-  cursor: none;
 }
 
 .cursor-inner, .cursor-outer {
@@ -30,7 +29,7 @@ body {
     width: 8px;
     height: 8px;
     background-color: #fff;
-    z-index: 999999;
+    z-index: 9999999;
     display: none;
 }
 
@@ -38,7 +37,7 @@ body {
     width: 20px;
     height: 20px;
     background-color: rgb(255, 255, 255);
-    z-index: 999998;
+    z-index: 9999998;
 }
 
 
@@ -133,7 +132,7 @@ nav li:first-child {
 
 @media(max-width:800px) {
   * {
-    cursor: none; /* hover */
+  /* hover */
   }
 
   .hideOnMobile {
@@ -286,7 +285,7 @@ p {
 
 .twitterhash-3:hover {
   color: rgb(26, 120, 183);
-  cursor: none; /* hover */
+  /* hover */
 }
 
 .twitterhash {
@@ -930,5 +929,5 @@ select {
 }
 
 a {
-  cursor: none;
+  /* hover */
 }

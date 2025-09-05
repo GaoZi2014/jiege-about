@@ -18,32 +18,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <script>
       document.addEventListener('DOMContentLoaded', () => {
-        const cursorInner = document.querySelector('.cursor-inner');
-        const cursorOuter = document.querySelector('.cursor-outer');
+      const cursorInner = document.querySelector('.cursor-inner');
+      const cursorOuter = document.querySelector('.cursor-outer');
 
-        if (cursorInner && cursorOuter) {
-            document.addEventListener('mousemove', e => {
-                cursorInner.style.left = e.clientX + 'px';
-                cursorInner.style.top = e.clientY + 'px';
-                
-                cursorOuter.style.left = e.clientX + 'px';
-                cursorOuter.style.top = e.clientY + 'px';
-            });
+      document.addEventListener('mousemove', e => {
+          cursorInner.style.left = e.pageX + 'px';
+          cursorInner.style.top = e.pageY + 'px';
+          
+          cursorOuter.style.left = e.pageX + 'px';
+          cursorOuter.style.top = e.pageY + 'px';
+      });
 
-            const hoverableElements = document.querySelectorAll('a, button, h1');
+      const hoverableElements = document.querySelectorAll('a, button, h1');
 
-            hoverableElements.forEach(item => {
-                item.addEventListener('mouseover', () => {
-                    cursorInner.style.transform = 'scale(2) translate(-25%, -25%)';
-                    cursorOuter.style.transform = 'scale(1.5) translate(-33%, -33%)';
-                });
-                item.addEventListener('mouseout', () => {
-                    cursorInner.style.transform = 'scale(1) translate(-50%, -50%)';
-                    cursorOuter.style.transform = 'scale(1) translate(-50%, -50%)';
-                });
-            });
-        }
-    });
+      hoverableElements.forEach(item => {
+          item.addEventListener('mouseover', () => {
+              cursorInner.style.transform = 'scale(2) translate(-25%, -25%)';
+              cursorOuter.style.transform = 'scale(1.5) translate(-33%, -33%)';
+          });
+          item.addEventListener('mouseout', () => {
+              cursorInner.style.transform = 'scale(1) translate(-50%, -50%)';
+              cursorOuter.style.transform = 'scale(1) translate(-50%, -50%)';
+          });
+      });
+  });
     </script>
   </head>
   <body>
